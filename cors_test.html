@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KAWASAN API Test</title>
+</head>
+<body>
+    <h2>KAWASAN Frontend Connection Test</h2>
+
+    <button onclick="testAPI()">
+        Test API Connection
+    </button>
+
+    <pre id="result">Waiting for test...</pre>
+
+    <script>
+        async function testAPI() {
+            const result = document.getElementById("result");
+
+            try {
+                const response = await fetch(
+                   "http://127.0.0.1:8000/api/map/districts/1_2/dashboard"
+                );
+
+                if (!response.ok) {
+                    throw new Error("HTTP " + response.status);
+                }
+
+                const data = await response.json();
+
+                result.textContent =
+                    "SUCCESS! Frontend connected to KAWASAN API.\n\n"
+                    + JSON.stringify(data, null, 2);
+
+            } catch (error) {
+                result.textContent = "ERROR: " + error.message;
+            }
+        }
+    </script>
+</body>
+</html>

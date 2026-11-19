@@ -1,0 +1,2 @@
+state,district,date,lf,lf_employed,lf_unemployed,lf_outside,p_rate,u_rate,ep_ratio,state_clean,district_clean
+Terengganu,Hulu Terengganu,2024-01-01,27.4,26.5,0.9,21.7,55.8,3.3,54.0,terengganu,hulu terengganu

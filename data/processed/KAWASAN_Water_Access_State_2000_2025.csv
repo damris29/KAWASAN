@@ -1,0 +1,388 @@
+state,year,overall,rural,urban,urban_rural_gap,coverage_status
+Johor,2000,99.0,98.0,100.0,2.0,Complete geographic coverage
+Johor,2001,99.7,99.0,100.0,1.0,Complete geographic coverage
+Johor,2002,99.6,99.0,100.0,1.0,Complete geographic coverage
+Johor,2003,99.7,99.0,100.0,1.0,Complete geographic coverage
+Johor,2004,99.4,98.0,100.0,2.0,Complete geographic coverage
+Johor,2005,99.5,99.0,100.0,1.0,Complete geographic coverage
+Johor,2006,99.5,99.0,100.0,1.0,Complete geographic coverage
+Johor,2007,99.8,99.5,100.0,0.5,Complete geographic coverage
+Johor,2008,99.8,99.5,100.0,0.5,Complete geographic coverage
+Johor,2009,99.8,99.5,100.0,0.5,Complete geographic coverage
+Johor,2010,99.8,99.5,100.0,0.5,Complete geographic coverage
+Johor,2011,99.8,99.5,100.0,0.5,Complete geographic coverage
+Johor,2012,99.8,99.5,100.0,0.5,Complete geographic coverage
+Johor,2013,99.8,99.5,100.0,0.5,Complete geographic coverage
+Johor,2014,99.8,99.5,100.0,0.5,Complete geographic coverage
+Johor,2015,99.8,99.5,100.0,0.5,Complete geographic coverage
+Johor,2016,99.8,99.5,100.0,0.5,Complete geographic coverage
+Johor,2017,99.8,99.5,100.0,0.5,Complete geographic coverage
+Johor,2018,99.8,99.5,100.0,0.5,Complete geographic coverage
+Johor,2019,99.8,99.5,100.0,0.5,Complete geographic coverage
+Johor,2020,99.9,99.8,100.0,0.20000000000000284,Complete geographic coverage
+Johor,2021,99.9,99.8,100.0,0.20000000000000284,Complete geographic coverage
+Johor,2022,99.9,99.8,100.0,0.20000000000000284,Complete geographic coverage
+Johor,2023,99.9,99.8,100.0,0.20000000000000284,Complete geographic coverage
+Johor,2024,99.9,99.8,100.0,0.20000000000000284,Complete geographic coverage
+Johor,2025,99.9,99.8,100.0,0.20000000000000284,Partial geographic coverage
+Kedah,2000,96.0,97.0,100.0,3.0,Complete geographic coverage
+Kedah,2001,98.2,97.0,100.0,3.0,Complete geographic coverage
+Kedah,2002,98.7,98.0,100.0,2.0,Complete geographic coverage
+Kedah,2003,99.4,99.0,100.0,1.0,Complete geographic coverage
+Kedah,2004,99.3,98.0,100.0,2.0,Complete geographic coverage
+Kedah,2005,99.5,99.0,100.0,1.0,Complete geographic coverage
+Kedah,2006,99.0,99.0,100.0,1.0,Complete geographic coverage
+Kedah,2007,96.0,92.5,100.0,7.5,Complete geographic coverage
+Kedah,2008,97.0,95.0,100.0,5.0,Complete geographic coverage
+Kedah,2009,98.0,96.3,100.0,3.700000000000003,Complete geographic coverage
+Kedah,2010,98.2,96.3,100.0,3.700000000000003,Complete geographic coverage
+Kedah,2011,98.2,96.3,100.0,3.700000000000003,Complete geographic coverage
+Kedah,2012,98.2,96.3,100.0,3.700000000000003,Complete geographic coverage
+Kedah,2013,98.3,96.5,100.0,3.5,Complete geographic coverage
+Kedah,2014,98.3,96.5,100.0,3.5,Complete geographic coverage
+Kedah,2015,98.3,96.5,100.0,3.5,Complete geographic coverage
+Kedah,2016,98.3,96.5,100.0,3.5,Complete geographic coverage
+Kedah,2017,98.3,96.5,100.0,3.5,Complete geographic coverage
+Kedah,2018,98.3,96.5,100.0,3.5,Complete geographic coverage
+Kedah,2019,98.3,96.5,100.0,3.5,Complete geographic coverage
+Kedah,2020,98.3,96.5,100.0,3.5,Complete geographic coverage
+Kedah,2021,98.3,96.5,100.0,3.5,Complete geographic coverage
+Kedah,2022,98.3,96.5,100.0,3.5,Complete geographic coverage
+Kedah,2023,98.3,96.5,100.0,3.5,Complete geographic coverage
+Kedah,2024,98.3,96.5,100.0,3.5,Complete geographic coverage
+Kedah,2025,98.3,96.5,100.0,3.5,Partial geographic coverage
+Kelantan,2000,53.0,48.0,63.0,15.0,Complete geographic coverage
+Kelantan,2001,57.5,52.0,68.0,16.0,Complete geographic coverage
+Kelantan,2002,61.7,57.0,71.0,14.0,Complete geographic coverage
+Kelantan,2003,62.1,57.0,72.0,15.0,Complete geographic coverage
+Kelantan,2004,63.8,56.0,71.0,15.0,Complete geographic coverage
+Kelantan,2005,70.0,60.0,80.0,20.0,Complete geographic coverage
+Kelantan,2006,72.0,65.0,79.0,14.0,Complete geographic coverage
+Kelantan,2007,53.0,52.1,55.5,3.3999999999999986,Complete geographic coverage
+Kelantan,2008,54.2,53.2,56.3,3.0999999999999943,Complete geographic coverage
+Kelantan,2009,55.7,54.7,57.7,3.0,Complete geographic coverage
+Kelantan,2010,55.5,55.2,56.2,1.0,Complete geographic coverage
+Kelantan,2011,57.3,57.4,56.9,-0.5,Complete geographic coverage
+Kelantan,2012,59.9,60.8,57.9,-2.8999999999999986,Complete geographic coverage
+Kelantan,2013,61.5,63.4,59.5,-3.8999999999999986,Complete geographic coverage
+Kelantan,2014,63.2,65.1,61.3,-3.799999999999997,Complete geographic coverage
+Kelantan,2015,64.0,66.4,61.5,-4.900000000000006,Complete geographic coverage
+Kelantan,2016,64.7,67.7,61.7,-6.0,Complete geographic coverage
+Kelantan,2017,68.0,74.4,61.5,-12.900000000000006,Complete geographic coverage
+Kelantan,2018,69.3,76.2,62.4,-13.800000000000004,Complete geographic coverage
+Kelantan,2019,70.7,77.8,63.5,-14.299999999999997,Complete geographic coverage
+Kelantan,2020,71.7,78.9,64.5,-14.400000000000006,Complete geographic coverage
+Kelantan,2021,73.1,80.8,65.4,-15.399999999999991,Complete geographic coverage
+Kelantan,2022,73.9,82.0,65.8,-16.200000000000003,Complete geographic coverage
+Kelantan,2023,74.5,83.1,65.8,-17.299999999999997,Complete geographic coverage
+Kelantan,2024,73.5,81.9,65.2,-16.700000000000003,Complete geographic coverage
+Kelantan,2025,73.0,80.8,65.2,-15.599999999999994,Partial geographic coverage
+Malaysia,2000,92.0,85.0,97.0,12.0,Complete geographic coverage
+Malaysia,2001,92.7,86.0,97.0,11.0,Complete geographic coverage
+Malaysia,2002,93.2,86.0,97.0,11.0,Complete geographic coverage
+Malaysia,2003,93.7,86.2,98.2,12.0,Complete geographic coverage
+Malaysia,2004,94.0,87.0,97.0,10.0,Complete geographic coverage
+Malaysia,2005,95.0,92.0,98.0,6.0,Complete geographic coverage
+Malaysia,2006,94.8,91.0,97.8,6.799999999999997,Complete geographic coverage
+Malaysia,2007,90.5,84.6,96.5,11.900000000000006,Complete geographic coverage
+Malaysia,2008,90.9,85.3,96.5,11.200000000000003,Complete geographic coverage
+Malaysia,2009,93.0,88.4,96.8,8.399999999999991,Complete geographic coverage
+Malaysia,2010,94.2,89.7,96.7,7.0,Complete geographic coverage
+Malaysia,2011,94.4,90.1,96.8,6.700000000000003,Complete geographic coverage
+Malaysia,2012,94.7,90.7,96.9,6.200000000000003,Complete geographic coverage
+Malaysia,2013,95.1,92.5,97.0,4.5,Complete geographic coverage
+Malaysia,2014,95.3,92.6,97.1,4.5,Complete geographic coverage
+Malaysia,2015,95.5,93.0,97.2,4.200000000000003,Complete geographic coverage
+Malaysia,2016,95.3,93.4,97.2,3.799999999999997,Complete geographic coverage
+Malaysia,2017,95.5,93.9,97.2,3.299999999999997,Complete geographic coverage
+Malaysia,2018,95.6,94.0,97.2,3.200000000000003,Complete geographic coverage
+Malaysia,2019,95.2,93.1,97.3,4.200000000000003,Complete geographic coverage
+Malaysia,2020,94.5,91.6,97.3,5.700000000000003,Complete geographic coverage
+Malaysia,2021,94.7,91.9,97.5,5.599999999999994,Complete geographic coverage
+Malaysia,2022,94.9,92.3,97.4,5.1000000000000085,Complete geographic coverage
+Malaysia,2023,95.2,93.1,97.4,4.300000000000011,Complete geographic coverage
+Malaysia,2024,95.3,93.2,97.4,4.200000000000003,Complete geographic coverage
+Melaka,2000,99.0,99.0,100.0,1.0,Complete geographic coverage
+Melaka,2001,99.7,99.0,100.0,1.0,Complete geographic coverage
+Melaka,2002,99.6,99.0,100.0,1.0,Complete geographic coverage
+Melaka,2003,99.7,99.0,100.0,1.0,Complete geographic coverage
+Melaka,2004,99.6,99.0,100.0,1.0,Complete geographic coverage
+Melaka,2005,99.8,99.0,100.0,1.0,Complete geographic coverage
+Melaka,2006,100.0,100.0,100.0,0.0,Complete geographic coverage
+Melaka,2007,100.0,100.0,100.0,0.0,Complete geographic coverage
+Melaka,2008,100.0,100.0,100.0,0.0,Complete geographic coverage
+Melaka,2009,100.0,100.0,100.0,0.0,Complete geographic coverage
+Melaka,2010,100.0,100.0,100.0,0.0,Complete geographic coverage
+Melaka,2011,100.0,100.0,100.0,0.0,Complete geographic coverage
+Melaka,2012,100.0,100.0,100.0,0.0,Complete geographic coverage
+Melaka,2013,100.0,100.0,100.0,0.0,Complete geographic coverage
+Melaka,2014,100.0,100.0,100.0,0.0,Complete geographic coverage
+Melaka,2015,100.0,100.0,100.0,0.0,Complete geographic coverage
+Melaka,2016,100.0,100.0,100.0,0.0,Complete geographic coverage
+Melaka,2017,100.0,100.0,100.0,0.0,Complete geographic coverage
+Melaka,2018,100.0,100.0,100.0,0.0,Complete geographic coverage
+Melaka,2019,100.0,100.0,100.0,0.0,Complete geographic coverage
+Melaka,2020,100.0,100.0,100.0,0.0,Complete geographic coverage
+Melaka,2021,100.0,100.0,100.0,0.0,Complete geographic coverage
+Melaka,2022,100.0,100.0,100.0,0.0,Complete geographic coverage
+Melaka,2023,100.0,100.0,100.0,0.0,Complete geographic coverage
+Melaka,2024,100.0,100.0,100.0,0.0,Complete geographic coverage
+Melaka,2025,100.0,100.0,100.0,0.0,Partial geographic coverage
+Negeri Sembilan,2000,99.0,99.0,100.0,1.0,Complete geographic coverage
+Negeri Sembilan,2001,99.5,99.0,100.0,1.0,Complete geographic coverage
+Negeri Sembilan,2002,99.5,99.0,100.0,1.0,Complete geographic coverage
+Negeri Sembilan,2003,99.5,99.0,100.0,1.0,Complete geographic coverage
+Negeri Sembilan,2004,99.6,99.0,100.0,1.0,Complete geographic coverage
+Negeri Sembilan,2005,99.8,99.0,100.0,1.0,Complete geographic coverage
+Negeri Sembilan,2006,100.0,100.0,100.0,0.0,Complete geographic coverage
+Negeri Sembilan,2007,99.8,99.5,100.0,0.5,Complete geographic coverage
+Negeri Sembilan,2008,99.8,99.5,100.0,0.5,Complete geographic coverage
+Negeri Sembilan,2009,99.8,99.5,100.0,0.5,Complete geographic coverage
+Negeri Sembilan,2010,99.8,99.5,100.0,0.5,Complete geographic coverage
+Negeri Sembilan,2011,99.9,99.8,100.0,0.20000000000000284,Complete geographic coverage
+Negeri Sembilan,2012,99.9,99.8,100.0,0.20000000000000284,Complete geographic coverage
+Negeri Sembilan,2013,99.9,99.8,100.0,0.20000000000000284,Complete geographic coverage
+Negeri Sembilan,2014,99.9,99.8,100.0,0.20000000000000284,Complete geographic coverage
+Negeri Sembilan,2015,99.9,99.8,100.0,0.20000000000000284,Complete geographic coverage
+Negeri Sembilan,2016,99.9,99.8,100.0,0.20000000000000284,Complete geographic coverage
+Negeri Sembilan,2017,99.9,99.8,100.0,0.20000000000000284,Complete geographic coverage
+Negeri Sembilan,2018,99.9,99.8,100.0,0.20000000000000284,Complete geographic coverage
+Negeri Sembilan,2019,99.9,99.8,100.0,0.20000000000000284,Complete geographic coverage
+Negeri Sembilan,2020,99.9,99.8,100.0,0.20000000000000284,Complete geographic coverage
+Negeri Sembilan,2021,99.9,99.8,100.0,0.20000000000000284,Complete geographic coverage
+Negeri Sembilan,2022,99.9,99.8,100.0,0.20000000000000284,Complete geographic coverage
+Negeri Sembilan,2023,99.9,99.8,100.0,0.20000000000000284,Complete geographic coverage
+Negeri Sembilan,2024,99.9,99.8,100.0,0.20000000000000284,Complete geographic coverage
+Negeri Sembilan,2025,99.9,99.8,100.0,0.20000000000000284,Partial geographic coverage
+Pahang,2000,93.0,93.0,98.0,5.0,Complete geographic coverage
+Pahang,2001,92.8,89.0,98.0,9.0,Complete geographic coverage
+Pahang,2002,92.7,89.0,98.0,9.0,Complete geographic coverage
+Pahang,2003,92.8,89.0,98.0,9.0,Complete geographic coverage
+Pahang,2004,94.5,90.0,99.0,9.0,Complete geographic coverage
+Pahang,2005,95.5,92.0,99.0,7.0,Complete geographic coverage
+Pahang,2006,93.5,89.0,98.0,9.0,Complete geographic coverage
+Pahang,2007,93.0,89.0,98.0,9.0,Complete geographic coverage
+Pahang,2008,93.0,89.0,98.0,9.0,Complete geographic coverage
+Pahang,2009,97.8,96.0,100.0,4.0,Complete geographic coverage
+Pahang,2010,98.0,96.0,100.0,4.0,Complete geographic coverage
+Pahang,2011,98.0,96.0,100.0,4.0,Complete geographic coverage
+Pahang,2012,98.0,96.0,100.0,4.0,Complete geographic coverage
+Pahang,2013,98.0,96.0,100.0,4.0,Complete geographic coverage
+Pahang,2014,98.0,96.0,100.0,4.0,Complete geographic coverage
+Pahang,2015,98.0,96.0,100.0,4.0,Complete geographic coverage
+Pahang,2016,98.0,96.0,100.0,4.0,Complete geographic coverage
+Pahang,2017,98.0,96.0,100.0,4.0,Complete geographic coverage
+Pahang,2018,98.0,96.0,100.0,4.0,Complete geographic coverage
+Pahang,2019,98.0,96.0,100.0,4.0,Complete geographic coverage
+Pahang,2020,98.0,96.0,100.0,4.0,Complete geographic coverage
+Pahang,2021,98.0,96.0,100.0,4.0,Complete geographic coverage
+Pahang,2022,98.0,96.0,100.0,4.0,Complete geographic coverage
+Pahang,2023,98.0,96.0,100.0,4.0,Complete geographic coverage
+Pahang,2024,98.0,96.0,100.0,4.0,Complete geographic coverage
+Pahang,2025,98.0,96.0,100.0,4.0,Partial geographic coverage
+Perak,2000,99.0,99.0,100.0,1.0,Complete geographic coverage
+Perak,2001,99.6,99.0,100.0,1.0,Complete geographic coverage
+Perak,2002,99.5,99.0,100.0,1.0,Complete geographic coverage
+Perak,2003,99.6,99.0,100.0,1.0,Complete geographic coverage
+Perak,2004,99.6,99.0,100.0,1.0,Complete geographic coverage
+Perak,2005,99.8,99.0,100.0,1.0,Complete geographic coverage
+Perak,2006,99.8,99.5,100.0,0.5,Complete geographic coverage
+Perak,2007,99.0,97.2,100.0,2.799999999999997,Complete geographic coverage
+Perak,2008,99.5,98.9,100.0,1.0999999999999943,Complete geographic coverage
+Perak,2009,99.2,98.0,100.0,2.0,Complete geographic coverage
+Perak,2010,99.2,98.0,100.0,2.0,Complete geographic coverage
+Perak,2011,99.6,99.2,100.0,0.7999999999999972,Complete geographic coverage
+Perak,2012,99.6,99.2,100.0,0.7999999999999972,Complete geographic coverage
+Perak,2013,99.6,99.2,100.0,0.7999999999999972,Complete geographic coverage
+Perak,2014,99.6,99.2,100.0,0.7999999999999972,Complete geographic coverage
+Perak,2015,99.6,99.2,100.0,0.7999999999999972,Complete geographic coverage
+Perak,2016,99.6,99.2,100.0,0.7999999999999972,Complete geographic coverage
+Perak,2017,99.6,99.2,100.0,0.7999999999999972,Complete geographic coverage
+Perak,2018,99.6,99.2,100.0,0.7999999999999972,Complete geographic coverage
+Perak,2019,99.6,99.2,100.0,0.7999999999999972,Complete geographic coverage
+Perak,2020,99.6,99.2,100.0,0.7999999999999972,Complete geographic coverage
+Perak,2021,99.6,99.2,100.0,0.7999999999999972,Complete geographic coverage
+Perak,2022,99.6,99.2,100.0,0.7999999999999972,Complete geographic coverage
+Perak,2023,99.6,99.2,100.0,0.7999999999999972,Complete geographic coverage
+Perak,2024,99.6,99.2,100.0,0.7999999999999972,Complete geographic coverage
+Perak,2025,99.6,99.2,100.0,0.7999999999999972,Partial geographic coverage
+Perlis,2000,98.0,98.0,100.0,2.0,Complete geographic coverage
+Perlis,2001,98.0,97.0,100.0,3.0,Complete geographic coverage
+Perlis,2002,99.2,98.0,100.0,2.0,Complete geographic coverage
+Perlis,2003,99.3,99.0,100.0,1.0,Complete geographic coverage
+Perlis,2004,99.3,98.0,100.0,2.0,Complete geographic coverage
+Perlis,2005,99.5,99.0,100.0,1.0,Complete geographic coverage
+Perlis,2006,99.5,99.0,100.0,1.0,Complete geographic coverage
+Perlis,2007,99.0,99.0,100.0,1.0,Complete geographic coverage
+Perlis,2008,99.4,99.0,100.0,1.0,Complete geographic coverage
+Perlis,2009,99.4,99.0,100.0,1.0,Complete geographic coverage
+Perlis,2010,99.4,99.0,100.0,1.0,Complete geographic coverage
+Perlis,2011,99.5,99.0,100.0,1.0,Complete geographic coverage
+Perlis,2012,99.5,99.0,100.0,1.0,Complete geographic coverage
+Perlis,2013,99.5,99.0,100.0,1.0,Complete geographic coverage
+Perlis,2014,99.5,99.0,100.0,1.0,Complete geographic coverage
+Perlis,2015,99.5,99.0,100.0,1.0,Complete geographic coverage
+Perlis,2016,99.5,99.0,100.0,1.0,Complete geographic coverage
+Perlis,2017,99.5,99.0,100.0,1.0,Complete geographic coverage
+Perlis,2018,99.5,99.0,100.0,1.0,Complete geographic coverage
+Perlis,2019,99.5,99.0,100.0,1.0,Complete geographic coverage
+Perlis,2020,99.5,99.0,100.0,1.0,Complete geographic coverage
+Perlis,2021,99.5,99.0,100.0,1.0,Complete geographic coverage
+Perlis,2022,99.5,99.0,100.0,1.0,Complete geographic coverage
+Perlis,2023,99.5,99.0,100.0,1.0,Complete geographic coverage
+Perlis,2024,99.5,99.0,100.0,1.0,Complete geographic coverage
+Perlis,2025,99.5,99.0,100.0,1.0,Partial geographic coverage
+Pulau Pinang,2000,99.0,99.0,100.0,1.0,Complete geographic coverage
+Pulau Pinang,2001,99.8,99.0,100.0,1.0,Complete geographic coverage
+Pulau Pinang,2002,99.8,99.0,100.0,1.0,Complete geographic coverage
+Pulau Pinang,2003,99.8,99.0,100.0,1.0,Complete geographic coverage
+Pulau Pinang,2004,99.6,99.0,100.0,1.0,Complete geographic coverage
+Pulau Pinang,2005,99.8,99.0,100.0,1.0,Complete geographic coverage
+Pulau Pinang,2006,99.5,99.0,100.0,1.0,Complete geographic coverage
+Pulau Pinang,2007,99.9,99.5,100.0,0.5,Complete geographic coverage
+Pulau Pinang,2008,99.9,99.6,100.0,0.4000000000000057,Complete geographic coverage
+Pulau Pinang,2009,99.9,99.6,100.0,0.4000000000000057,Complete geographic coverage
+Pulau Pinang,2010,99.9,99.7,100.0,0.29999999999999716,Complete geographic coverage
+Pulau Pinang,2011,99.8,99.7,100.0,0.29999999999999716,Complete geographic coverage
+Pulau Pinang,2012,99.9,99.7,100.0,0.29999999999999716,Complete geographic coverage
+Pulau Pinang,2013,99.9,99.7,100.0,0.29999999999999716,Complete geographic coverage
+Pulau Pinang,2014,99.9,99.7,100.0,0.29999999999999716,Complete geographic coverage
+Pulau Pinang,2015,99.9,99.7,100.0,0.29999999999999716,Complete geographic coverage
+Pulau Pinang,2016,99.9,99.7,100.0,0.29999999999999716,Complete geographic coverage
+Pulau Pinang,2017,99.9,99.8,100.0,0.20000000000000284,Complete geographic coverage
+Pulau Pinang,2018,99.9,99.8,100.0,0.20000000000000284,Complete geographic coverage
+Pulau Pinang,2019,99.9,99.8,100.0,0.20000000000000284,Complete geographic coverage
+Pulau Pinang,2020,99.9,99.8,100.0,0.20000000000000284,Complete geographic coverage
+Pulau Pinang,2021,99.9,99.8,100.0,0.20000000000000284,Complete geographic coverage
+Pulau Pinang,2022,99.9,99.8,100.0,0.20000000000000284,Complete geographic coverage
+Pulau Pinang,2023,99.9,99.8,100.0,0.20000000000000284,Complete geographic coverage
+Pulau Pinang,2024,99.9,99.8,100.0,0.20000000000000284,Complete geographic coverage
+Pulau Pinang,2025,99.9,99.8,100.0,0.20000000000000284,Partial geographic coverage
+Sabah,2000,73.0,73.0,88.0,15.0,Complete geographic coverage
+Sabah,2001,72.9,59.0,88.0,29.0,Complete geographic coverage
+Sabah,2002,72.9,59.0,88.0,29.0,Complete geographic coverage
+Sabah,2003,73.9,59.0,90.0,31.0,Complete geographic coverage
+Sabah,2004,75.8,62.0,89.0,27.0,Complete geographic coverage
+Sabah,2005,75.5,61.0,90.0,29.0,Complete geographic coverage
+Sabah,2006,77.0,64.0,94.0,30.0,Complete geographic coverage
+Sabah,2007,76.0,52.0,99.0,47.0,Complete geographic coverage
+Sabah,2008,76.0,52.0,99.0,47.0,Complete geographic coverage
+Sabah,2009,76.3,52.3,99.2,46.900000000000006,Complete geographic coverage
+Sabah,2010,79.7,58.6,99.5,40.9,Complete geographic coverage
+Sabah,2011,80.0,59.0,99.5,40.5,Complete geographic coverage
+Sabah,2012,82.0,64.2,99.8,35.599999999999994,Complete geographic coverage
+Sabah,2013,86.0,73.1,99.8,26.700000000000003,Complete geographic coverage
+Sabah,2014,86.5,73.1,99.8,26.700000000000003,Complete geographic coverage
+Sabah,2015,87.9,76.0,99.8,23.799999999999997,Complete geographic coverage
+Sabah,2016,89.4,79.0,99.8,20.799999999999997,Complete geographic coverage
+Sabah,2017,89.0,78.0,100.0,22.0,Complete geographic coverage
+Sabah,2018,89.0,78.0,100.0,22.0,Complete geographic coverage
+Sabah,2019,89.0,78.0,100.0,22.0,Complete geographic coverage
+Sabah,2020,77.0,54.0,100.0,46.0,Complete geographic coverage
+Sabah,2021,78.0,56.0,100.0,44.0,Complete geographic coverage
+Sabah,2022,80.5,61.0,100.0,39.0,Complete geographic coverage
+Sabah,2023,83.0,69.0,100.0,31.0,Complete geographic coverage
+Sabah,2024,85.4,70.0,100.0,30.0,Complete geographic coverage
+Sarawak,2000,96.0,92.0,100.0,8.0,Complete geographic coverage
+Sarawak,2001,95.8,92.0,100.0,8.0,Complete geographic coverage
+Sarawak,2002,95.8,92.0,100.0,8.0,Complete geographic coverage
+Sarawak,2003,95.8,92.0,100.0,8.0,Complete geographic coverage
+Sarawak,2004,96.0,92.0,100.0,8.0,Complete geographic coverage
+Sarawak,2005,96.0,92.0,100.0,8.0,Complete geographic coverage
+Sarawak,2006,96.0,92.0,100.0,8.0,Complete geographic coverage
+Sarawak,2007,77.0,54.1,100.0,45.9,Complete geographic coverage
+Sarawak,2008,78.0,56.5,99.0,42.5,Complete geographic coverage
+Sarawak,2009,86.2,61.5,99.5,38.0,Complete geographic coverage
+Sarawak,2010,93.7,61.7,99.5,37.8,Complete geographic coverage
+Sarawak,2011,93.7,63.0,99.5,36.5,Complete geographic coverage
+Sarawak,2012,93.8,63.5,99.6,36.099999999999994,Complete geographic coverage
+Sarawak,2013,93.8,76.0,99.7,23.700000000000003,Complete geographic coverage
+Sarawak,2014,94.0,76.6,99.8,23.200000000000003,Complete geographic coverage
+Sarawak,2015,87.9,78.0,99.8,21.799999999999997,Complete geographic coverage
+Sarawak,2016,89.2,78.7,99.8,21.099999999999994,Complete geographic coverage
+Sarawak,2017,89.6,79.5,99.8,20.299999999999997,Complete geographic coverage
+Sarawak,2018,89.8,79.7,99.9,20.200000000000003,Complete geographic coverage
+Sarawak,2019,81.9,64.8,99.9,35.10000000000001,Complete geographic coverage
+Sarawak,2020,83.4,66.5,99.0,32.5,Complete geographic coverage
+Sarawak,2021,83.6,66.9,99.0,32.099999999999994,Complete geographic coverage
+Sarawak,2022,83.7,67.2,99.0,31.799999999999997,Complete geographic coverage
+Sarawak,2023,84.3,68.2,99.0,30.799999999999997,Complete geographic coverage
+Sarawak,2024,85.4,70.0,99.0,29.0,Complete geographic coverage
+Selangor,2000,99.0,98.0,100.0,2.0,Complete geographic coverage
+Selangor,2001,99.8,98.0,100.0,2.0,Complete geographic coverage
+Selangor,2002,99.7,98.0,100.0,2.0,Complete geographic coverage
+Selangor,2003,99.9,99.0,100.0,1.0,Complete geographic coverage
+Selangor,2004,99.6,99.0,100.0,1.0,Complete geographic coverage
+Selangor,2005,99.5,99.0,100.0,1.0,Complete geographic coverage
+Selangor,2006,99.9,99.0,100.0,1.0,Complete geographic coverage
+Selangor,2007,99.9,99.0,100.0,1.0,Complete geographic coverage
+Selangor,2008,99.9,99.0,100.0,1.0,Complete geographic coverage
+Selangor,2009,99.9,99.0,100.0,1.0,Complete geographic coverage
+Selangor,2010,99.5,99.0,100.0,1.0,Complete geographic coverage
+Selangor,2011,99.8,99.5,100.0,0.5,Complete geographic coverage
+Selangor,2012,99.8,99.5,100.0,0.5,Complete geographic coverage
+Selangor,2013,99.8,99.5,100.0,0.5,Complete geographic coverage
+Selangor,2014,99.8,99.5,100.0,0.5,Complete geographic coverage
+Selangor,2015,99.8,99.5,100.0,0.5,Complete geographic coverage
+Selangor,2016,99.8,99.5,100.0,0.5,Complete geographic coverage
+Selangor,2017,99.8,99.5,100.0,0.5,Complete geographic coverage
+Selangor,2018,99.8,99.5,100.0,0.5,Complete geographic coverage
+Selangor,2019,99.8,99.5,100.0,0.5,Complete geographic coverage
+Selangor,2020,99.8,99.5,100.0,0.5,Complete geographic coverage
+Selangor,2021,99.8,99.5,100.0,0.5,Complete geographic coverage
+Selangor,2022,99.8,99.5,100.0,0.5,Complete geographic coverage
+Selangor,2023,99.8,99.5,100.0,0.5,Complete geographic coverage
+Selangor,2024,99.8,99.5,100.0,0.5,Complete geographic coverage
+Selangor,2025,99.8,99.5,100.0,0.5,Partial geographic coverage
+Terengganu,2000,81.0,78.0,84.0,6.0,Complete geographic coverage
+Terengganu,2001,82.4,79.0,86.0,7.0,Complete geographic coverage
+Terengganu,2002,87.7,79.0,97.0,18.0,Complete geographic coverage
+Terengganu,2003,87.8,79.0,97.0,18.0,Complete geographic coverage
+Terengganu,2004,84.8,81.0,88.0,7.0,Complete geographic coverage
+Terengganu,2005,96.0,83.0,100.0,17.0,Complete geographic coverage
+Terengganu,2006,91.0,83.0,98.0,15.0,Complete geographic coverage
+Terengganu,2007,90.0,81.5,98.0,16.5,Complete geographic coverage
+Terengganu,2008,90.4,82.0,98.5,16.5,Complete geographic coverage
+Terengganu,2009,90.7,82.5,98.6,16.099999999999994,Complete geographic coverage
+Terengganu,2010,95.7,92.7,98.6,5.8999999999999915,Complete geographic coverage
+Terengganu,2011,95.8,92.8,98.8,6.0,Complete geographic coverage
+Terengganu,2012,96.0,92.9,99.1,6.199999999999989,Complete geographic coverage
+Terengganu,2013,96.0,92.9,99.1,6.199999999999989,Complete geographic coverage
+Terengganu,2014,96.0,92.9,99.1,6.199999999999989,Complete geographic coverage
+Terengganu,2015,96.0,92.9,99.1,6.199999999999989,Complete geographic coverage
+Terengganu,2016,96.0,92.9,99.1,6.199999999999989,Complete geographic coverage
+Terengganu,2017,96.0,92.9,99.1,6.199999999999989,Complete geographic coverage
+Terengganu,2018,96.0,92.9,99.1,6.199999999999989,Complete geographic coverage
+Terengganu,2019,96.0,92.9,99.1,6.199999999999989,Complete geographic coverage
+Terengganu,2020,96.0,92.9,99.1,6.199999999999989,Complete geographic coverage
+Terengganu,2021,96.0,92.9,99.1,6.199999999999989,Complete geographic coverage
+Terengganu,2022,96.0,92.9,99.1,6.199999999999989,Complete geographic coverage
+Terengganu,2023,96.0,92.9,99.1,6.199999999999989,Complete geographic coverage
+Terengganu,2024,96.0,92.9,99.1,6.199999999999989,Complete geographic coverage
+Terengganu,2025,96.0,92.9,99.1,6.199999999999989,Partial geographic coverage
+W.P. Labuan,2000,100.0,100.0,100.0,0.0,Complete geographic coverage
+W.P. Labuan,2001,100.0,100.0,100.0,0.0,Complete geographic coverage
+W.P. Labuan,2002,100.0,100.0,100.0,0.0,Complete geographic coverage
+W.P. Labuan,2003,100.0,100.0,100.0,0.0,Complete geographic coverage
+W.P. Labuan,2004,100.0,100.0,100.0,0.0,Complete geographic coverage
+W.P. Labuan,2005,100.0,100.0,100.0,0.0,Complete geographic coverage
+W.P. Labuan,2006,100.0,100.0,100.0,0.0,Complete geographic coverage
+W.P. Labuan,2007,100.0,100.0,100.0,0.0,Complete geographic coverage
+W.P. Labuan,2008,100.0,100.0,100.0,0.0,Complete geographic coverage
+W.P. Labuan,2009,100.0,100.0,100.0,0.0,Complete geographic coverage
+W.P. Labuan,2010,100.0,100.0,100.0,0.0,Complete geographic coverage
+W.P. Labuan,2011,100.0,100.0,100.0,0.0,Complete geographic coverage
+W.P. Labuan,2012,100.0,100.0,100.0,0.0,Complete geographic coverage
+W.P. Labuan,2013,100.0,100.0,100.0,0.0,Complete geographic coverage
+W.P. Labuan,2014,100.0,100.0,100.0,0.0,Complete geographic coverage
+W.P. Labuan,2015,100.0,100.0,100.0,0.0,Complete geographic coverage
+W.P. Labuan,2016,100.0,100.0,100.0,0.0,Complete geographic coverage
+W.P. Labuan,2017,100.0,100.0,100.0,0.0,Complete geographic coverage
+W.P. Labuan,2018,100.0,100.0,100.0,0.0,Complete geographic coverage
+W.P. Labuan,2019,100.0,100.0,100.0,0.0,Complete geographic coverage
+W.P. Labuan,2020,100.0,100.0,100.0,0.0,Complete geographic coverage
+W.P. Labuan,2021,100.0,100.0,100.0,0.0,Complete geographic coverage
+W.P. Labuan,2022,100.0,100.0,100.0,0.0,Complete geographic coverage
+W.P. Labuan,2023,100.0,100.0,100.0,0.0,Complete geographic coverage
+W.P. Labuan,2024,100.0,100.0,100.0,0.0,Complete geographic coverage
+W.P. Labuan,2025,100.0,100.0,100.0,0.0,Partial geographic coverage
