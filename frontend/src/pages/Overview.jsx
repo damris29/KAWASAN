@@ -1,68 +1,28 @@
-import { useEffect, useState } from "react";
-import {
-  ArrowUpRight,
-  Database,
-  MapPinned,
-  Layers3,
-  Activity,
-  CheckCircle2,
-  AlertCircle,
-  LoaderCircle,
-  Compass,
-} from "lucide-react";
+import { lazy, Suspense, useMemo } from "react";
+import { Activity, ArrowDownRight, ArrowUpRight, ChartNoAxesCombined, Compass, GitCompareArrows, MapPinned } from "lucide-react";
 import { Link } from "react-router-dom";
-import api from "../services/api";
+import { EmptyState, Panel, ResourceState, Stat, linkClass } from "../components/Dashboard";
+import NationalCharts from "../components/NationalCharts";
+import DistrictRankingTable from "../components/DistrictRankingTable";
+import { useDistricts } from "../hooks/useDistricts";
+import useResource from "../hooks/useResource";
+import { districtLink, number, valid } from "../utils/analytics";
 
-function Overview() {
-  const [districts, setDistricts] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState("");
+const DistrictMap = lazy(() => import("../components/DistrictMap"));
 
-  useEffect(() => {
-    async function fetchDistricts() {
-      try {
-        const response = await api.get("/api/districts");
-        setDistricts(response.data.districts);
-      } catch (err) {
-        console.error(err);
-        setError("Unable to connect to the KAWASAN API.");
-      } finally {
-        setLoading(false);
-      }
-    }
-
-    fetchDistricts();
-  }, []);
-
-  const stats = [
-    {
-      label: "Districts in dataset",
-      value: loading ? "—" : error ? "—" : districts.length,
-      detail: "District records returned by API",
-      icon: MapPinned,
-      iconStyle: "bg-teal-50 text-teal-700",
-    },
-    {
-      label: "Data source",
-      value: error ? "Offline" : loading ? "Checking" : "Connected",
-      detail: "KAWASAN FastAPI connection",
-      icon: Database,
-      iconStyle: "bg-blue-50 text-blue-700",
-    },
-    {
-      label: "Platform",
-      value: "KRDI",
-      detail: "Regional development index",
-      icon: Layers3,
-      iconStyle: "bg-violet-50 text-violet-700",
-    },
-    {
-      label: "Reference year",
-      value: "2024",
-      detail: "Dashboard reference year",
-      icon: Activity,
-      iconStyle: "bg-amber-50 text-amber-700",
-    },
+export default function Overview() {
+  const list = useDistricts();
+  const { districts } = list;
+  const geometry = useResource("/api/map/geojson");
+  const mapScores = useResource("/api/map/districts");
+  const ranked = useMemo(() => districts
+    .filter(({ score, rank }) => valid(score) && valid(rank))
+    .sort((a, b) => a.rank - b.rank || b.score - a.score), [districts]);
+  const scores = districts.map(({ score }) => score).filter(valid);
+  const average = scores.length ? scores.reduce((sum, score) => sum + score, 0) / scores.length : null;
+  const extremes = [
+    { label: "Highest-ranked district", district: ranked[0], icon: ArrowUpRight },
+    { label: "Lowest-ranked district", district: ranked.at(-1), icon: ArrowDownRight },
   ];
 
   return (
@@ -98,125 +58,30 @@ function Overview() {
           <span>KRDI reference year 2024</span>
         </div>
       </section>
-
-      <section>
-        <div className="mb-4 flex flex-wrap items-end justify-between gap-3">
-          <div>
-            <p className="text-xs font-bold uppercase tracking-[0.16em] text-teal-700">
-              At a glance
-            </p>
-            <h2 className="mt-1 text-xl font-bold tracking-tight text-slate-900">
-              Platform overview
-            </h2>
-          </div>
-          <p className="text-xs text-slate-400">Live connection status</p>
-        </div>
-
+      <ResourceState resource={list} label="district rankings">
         <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-          {stats.map((stat) => {
-            const Icon = stat.icon;
-            return (
-              <article
-                key={stat.label}
-                className="rounded-2xl border border-slate-200/80 bg-white p-5 shadow-sm shadow-slate-900/[0.02] transition duration-200 hover:-translate-y-0.5 hover:shadow-md"
-              >
-                <div className="flex items-start justify-between gap-3">
-                  <div>
-                    <p className="text-xs font-semibold text-slate-500">{stat.label}</p>
-                    <p className="mt-3 text-2xl font-bold tracking-tight text-slate-900">
-                      {stat.value}
-                    </p>
-                  </div>
-                  <div className={`rounded-xl p-3 ${stat.iconStyle}`}>
-                    <Icon size={19} />
-                  </div>
-                </div>
-                <p className="mt-4 border-t border-slate-100 pt-3 text-xs text-slate-400">
-                  {stat.detail}
-                </p>
-              </article>
-            );
-          })}
+          <Stat label="Total districts" value={number(districts.length)} detail="Districts in the 2024 dataset" icon={MapPinned} />
+          <Stat label="Average district KRDI" value={number(average)} detail="Unweighted mean of valid district scores" icon={Activity} />
+          {extremes.map(({ label, district, icon }) => (
+            <Stat key={label} label={label} icon={icon}
+              value={district ? <Link className={linkClass} to={districtLink(district.code)}>{district.name}</Link> : "N/A"}
+              detail={district && district.state + " · Rank " + district.rank + " · KRDI " + number(district.score)} />
+          ))}
         </div>
-      </section>
+      </ResourceState>
 
-      <section className="grid gap-5 xl:grid-cols-[1.45fr_1fr]">
-        <article className="overflow-hidden rounded-2xl border border-slate-200/80 bg-white shadow-sm shadow-slate-900/[0.02]">
-          <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 px-5 py-5 sm:px-6">
-            <div>
-              <h3 className="font-bold text-slate-900">Malaysia development overview</h3>
-              <p className="mt-1 text-xs text-slate-400">
-                Regional intelligence workspace
-              </p>
-            </div>
-            <span className="rounded-lg bg-slate-100 px-2.5 py-1.5 text-[10px] font-semibold uppercase tracking-wide text-slate-500">
-              Overview
-            </span>
-          </div>
-          <div className="flex min-h-[260px] flex-col items-center justify-center bg-[radial-gradient(ellipse_at_center,_#e1f4f1,_#f7fafb_66%)] px-6 py-10 text-center">
-            <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-2xl border border-teal-100 bg-white text-teal-700 shadow-sm">
-              <MapPinned size={30} strokeWidth={1.6} />
-            </div>
-            <h4 className="text-base font-bold text-slate-800">Explore district geography</h4>
-            <p className="mt-2 max-w-sm text-sm leading-6 text-slate-500">
-              Open District Intelligence to explore the available district profiles.
-            </p>
-            <Link
-              to="/districts"
-              className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-teal-700 transition hover:text-teal-900"
-            >
-              Go to District Intelligence <ArrowUpRight size={16} />
-            </Link>
-          </div>
-        </article>
+      <Panel title="Malaysia district development map" description="Explore 2024 KRDI score bands. Select a district polygon to open its profile. The bands are exploratory.">
+        <Suspense fallback={<EmptyState>Loading the interactive map…</EmptyState>}>
+          <DistrictMap geometry={geometry} scores={mapScores} national />
+        </Suspense>
+      </Panel>
 
-        <article className="rounded-2xl border border-slate-200/80 bg-white p-5 shadow-sm shadow-slate-900/[0.02] sm:p-6">
-          <div className="flex items-center justify-between">
-            <div>
-              <h3 className="font-bold text-slate-900">API connection</h3>
-              <p className="mt-1 text-xs text-slate-400">District data service</p>
-            </div>
-            <div className="rounded-xl bg-slate-50 p-3 text-slate-500">
-              <Database size={19} />
-            </div>
-          </div>
-
-          <div className="mt-6 rounded-xl border border-slate-100 bg-slate-50/80 p-4">
-            <div className="flex items-center gap-2">
-              {loading ? (
-                <LoaderCircle size={17} className="animate-spin text-blue-600" />
-              ) : error ? (
-                <AlertCircle size={17} className="text-rose-600" />
-              ) : (
-                <CheckCircle2 size={17} className="text-emerald-600" />
-              )}
-              <span className="text-sm font-semibold text-slate-800">
-                {loading ? "Connecting to API" : error ? "Connection unavailable" : "Connected successfully"}
-              </span>
-            </div>
-            <p className="mt-2 pl-6 text-xs leading-5 text-slate-500">
-              {loading
-                ? "Retrieving district records from the configured backend."
-                : error
-                  ? error
-                  : "The dashboard has received the district list from KAWASAN FastAPI."}
-            </p>
-          </div>
-
-          <div className="mt-5 space-y-3">
-            <div className="flex items-center justify-between text-xs">
-              <span className="text-slate-500">Endpoint</span>
-              <span className="font-mono font-medium text-slate-700">/api/districts</span>
-            </div>
-            <div className="flex items-center justify-between text-xs">
-              <span className="text-slate-500">District records</span>
-              <span className="font-semibold text-slate-800">
-                {loading || error ? "—" : districts.length}
-              </span>
-            </div>
-          </div>
-        </article>
-      </section>
+      {!list.loading && !list.error && districts.length > 0 && (
+        <>
+          <NationalCharts districts={districts} ranked={ranked} />
+          <DistrictRankingTable districts={districts} />
+        </>
+      )}
 
       <section>
         <div className="mb-4">
@@ -275,5 +140,3 @@ function Overview() {
     </div>
   );
 }
-
-export default Overview;

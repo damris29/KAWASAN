@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
-import { CalendarDays, ChevronRight, CircleHelp } from "lucide-react";
+import { CalendarDays, ChevronRight } from "lucide-react";
+import MethodologyDialog from "./MethodologyDialog";
 
 const pageTitles = {
   "/": {
@@ -57,14 +58,7 @@ function Header() {
             <span className="h-2 w-2 rounded-full bg-teal-500" />
             KRDI v0.1
           </div>
-          <button
-            type="button"
-            aria-label="Help"
-            title="KAWASAN dashboard"
-            className="hidden h-10 w-10 items-center justify-center rounded-xl border border-slate-200 text-slate-500 transition hover:border-teal-200 hover:bg-teal-50 hover:text-teal-700 sm:flex"
-          >
-            <CircleHelp size={18} />
-          </button>
+          <MethodologyDialog />
         </div>
       </div>
     </header>

@@ -15,3 +15,12 @@ html { min-width: 320px; background: #f4f7f8; }
 body { margin: 0; min-width: 320px; min-height: 100vh; }
 button, a { -webkit-tap-highlight-color: transparent; }
 ::selection { background: #c9f4ed; color: #123b3b; }
+
+:focus-visible {
+  outline: 2px solid #0f766e;
+  outline-offset: 3px;
+}
+
+aside :focus-visible {
+  outline-color: #5eead4;
+}
