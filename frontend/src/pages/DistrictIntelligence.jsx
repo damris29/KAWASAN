@@ -11,33 +11,29 @@ import { detailPath, districtLink, geoPath, indicatorLabel, indicatorValue, numb
 
 const DistrictMap = lazy(() => import("../components/DistrictMap"));
 
-function DistrictProfile({ profile }) {
-  const { krdi, indicators, benchmarking, dimensions, district, state, district_code: code } = profile;
+function DistrictMetrics({ profile }) {
+  const { krdi, indicators } = profile;
+  return (
+    <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+      <Stat prominent label="KRDI score" value={number(krdi.score)} icon={Activity} />
+      <Stat prominent label="National rank" value={number(krdi.rank)} icon={MapPinned} />
+      <Stat prominent label="Rank stability" value={krdi.stability ?? "N/A"} icon={ArrowUpRight} />
+      <Stat prominent label="Rank range" value={number(krdi.rank_range)} />
+      {[
+        ["population", indicators.demographics],
+        ["income_median", indicators.economy],
+        ["poverty_absolute", indicators.economy],
+        ["u_rate", indicators.employment],
+      ].map(([key, group]) => <Stat key={key} label={indicatorLabel(key)} value={indicatorValue(key, group[key])} color="text-slate-900" />)}
+    </div>
+  );
+}
+
+function DistrictIndicators({ profile }) {
+  const { indicators, benchmarking } = profile;
   return (
     <>
-      <Panel title={placeName(district)} description={placeName(state) + " · " + profile.reference_year}
-        actions={<div className="flex flex-wrap gap-4 text-sm">
-          <Link className={linkClass} to={"/compare?a=" + encodeURIComponent(code)}>Compare district</Link>
-          <Link className={linkClass} to={districtLink(code, "/gaps")}>Investigate gaps</Link>
-        </div>}>
-        <p className="text-sm text-slate-600">Provisional KRDI v0.1 district profile</p>
-      </Panel>
-      <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-        <Stat label="KRDI score" value={number(krdi.score)} detail="Composite score out of 100" icon={Activity} />
-        <Stat label="National rank" value={number(krdi.rank)} detail="Lower rank numbers indicate stronger performance" icon={MapPinned} />
-        <Stat label="Rank stability" value={krdi.stability ?? "N/A"} detail="Sensitivity across tested weighting scenarios" icon={ArrowUpRight} />
-        <Stat label="Rank range" value={number(krdi.rank_range)} detail="Difference between the highest and lowest ranks across tested scenarios" />
-      </div>
-      <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-        {[
-          ["population", indicators.demographics],
-          ["income_median", indicators.economy],
-          ["poverty_absolute", indicators.economy],
-          ["u_rate", indicators.employment],
-        ].map(([key, group]) => <Stat key={key} label={indicatorLabel(key)} value={indicatorValue(key, group[key])} color="text-slate-900" />)}
-      </div>
-      <DimensionCharts first={{ name: placeName(district), dimensions }} />
-      <Panel title="Socioeconomic indicators" description="2024 source units are shown where documented. N/A indicates unavailable data.">
+      <Panel title="Socioeconomic Indicators" description="N/A means data is unavailable.">
         <div className="grid gap-4 lg:grid-cols-2">
           {Object.entries(indicators).map(([group, values]) => (
             <div key={group} className="min-w-0">
@@ -51,8 +47,7 @@ function DistrictProfile({ profile }) {
           ))}
         </div>
       </Panel>
-      <Panel title="National district benchmarking" description={benchmarkNote}><BenchmarkTable benchmarks={benchmarking} /></Panel>
-      <Panel title="Ranking sensitivity" description="KRDI rankings depend on indicator weights and normalization. The rank range above summarizes the spread across the four tested weighting scenarios." />
+      <Panel title="National District Benchmarking" description={benchmarkNote}><BenchmarkTable benchmarks={benchmarking} /></Panel>
     </>
   );
 }
@@ -65,22 +60,36 @@ export default function DistrictIntelligence() {
 
   return (
     <div className="space-y-5">
-      <Panel title="Select a district">
-        <ResourceState resource={list} label="district options" empty={!list.districts.length && "No districts are available."}>
-          <DistrictSelector label="District profile" districts={list.districts} code={district?.code} onChange={select} />
-          {invalid && <p role="alert" className="mt-3 text-sm text-rose-800">That district code is unavailable. Choose a district from the list.</p>}
-        </ResourceState>
-      </Panel>
+      <div className={district ? "grid gap-5 lg:grid-cols-[minmax(0,3fr)_minmax(0,1fr)]" : undefined}>
+        <Panel title="Select a District">
+          <ResourceState resource={list} label="district options" empty={!list.districts.length && "No districts are available."}>
+            <DistrictSelector label="District profile" districts={list.districts} code={district?.code} onChange={select} />
+            {invalid && <p role="alert" className="mt-3 text-sm text-rose-800">That district code is unavailable. Choose a district from the list.</p>}
+          </ResourceState>
+        </Panel>
+        {district && (
+          <Panel title={district.name} description={profile.data ? district.state + " · " + profile.data.reference_year : district.state}>
+            <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm">
+              <Link className={linkClass} to={"/compare?a=" + encodeURIComponent(district.code)}>Compare district</Link>
+              <Link className={linkClass} to={districtLink(district.code, "/gaps")}>Investigate gaps</Link>
+            </div>
+          </Panel>
+        )}
+      </div>
       {district && (
         <>
           <ResourceState resource={profile} label="district profile">
-            {profile.data && <DistrictProfile profile={profile.data} />}
+            {profile.data && <DistrictMetrics profile={profile.data} />}
           </ResourceState>
-          <Panel title={district.name + " boundary"} description={district.state + " · Hover over the boundary for district information."}>
-            <Suspense fallback={<EmptyState>Loading the interactive map…</EmptyState>}>
-              <DistrictMap key={district.code} geometry={geometry} />
-            </Suspense>
-          </Panel>
+          <div className={profile.data ? "grid gap-5 lg:grid-cols-2" : undefined}>
+            {profile.data && <DimensionCharts first={{ name: placeName(profile.data.district), dimensions: profile.data.dimensions }} />}
+            <Panel title={district.name + " Boundary"} description="Hover over the boundary for district information.">
+              <Suspense fallback={<EmptyState>Loading the interactive map…</EmptyState>}>
+                <DistrictMap key={district.code} geometry={geometry} />
+              </Suspense>
+            </Panel>
+          </div>
+          {profile.data && <DistrictIndicators profile={profile.data} />}
         </>
       )}
     </div>

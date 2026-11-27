@@ -1,5 +1,5 @@
 import { lazy, Suspense, useMemo } from "react";
-import { Activity, ArrowDownRight, ArrowUpRight, Compass, MapPinned } from "lucide-react";
+import { Activity, ArrowDownRight, ArrowUpRight, MapPinned } from "lucide-react";
 import { Link } from "react-router-dom";
 import { EmptyState, Panel, ResourceState, Stat, linkClass } from "../components/Dashboard";
 import NationalCharts, { NationalRankingCharts } from "../components/NationalCharts";
@@ -31,16 +31,11 @@ export default function Overview() {
         <div className="absolute -right-20 -top-28 -z-10 h-80 w-80 rounded-full border-[45px] border-teal-300/10" />
         <div className="absolute -bottom-36 right-1/4 -z-10 h-72 w-72 rounded-full bg-teal-400/10 blur-3xl" />
         <div className="max-w-3xl">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-teal-200/20 bg-teal-200/10 px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.2em] text-teal-200">
-            <span className="h-1.5 w-1.5 rounded-full bg-teal-300" />
-            Malaysia socioeconomic intelligence
-          </div>
           <h1 className="text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-[46px]">
-            Understand every <span className="text-teal-300">KAWASAN.</span>
+            District Development Across Malaysia
           </h1>
           <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-300 sm:text-base">
-            Explore district-level development information, navigate regional
-            profiles and bring socioeconomic data into clearer focus.
+            See how districts compare on income, equality, and access to basic services.
           </p>
           <Link
             to="/districts"
@@ -49,29 +44,21 @@ export default function Overview() {
             Explore districts <ArrowUpRight size={17} />
           </Link>
         </div>
-        <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-2 border-t border-white/10 pt-5 text-xs text-slate-300">
-          <span className="flex items-center gap-2">
-            <Compass size={14} className="text-teal-300" />
-            District-level perspective
-          </span>
-          <span className="hidden h-1 w-1 rounded-full bg-slate-500 sm:block" />
-          <span>KRDI reference year 2024</span>
-        </div>
       </section>
       <ResourceState resource={list} label="district rankings">
         <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-          <Stat label="Total districts" value={number(districts.length)} detail="Districts in the 2024 dataset" icon={MapPinned} />
-          <Stat label="Average district KRDI" value={number(average)} detail="Unweighted mean of valid district scores" icon={Activity} />
+          <Stat compact label="Total districts" value={<span className="block text-4xl">{number(districts.length)}</span>} icon={MapPinned} />
+          <Stat compact label="Average district KRDI" value={number(average)} detail="District scores weighted equally" icon={Activity} />
           {extremes.map(({ label, district, icon }) => (
-            <Stat key={label} label={label} icon={icon}
+            <Stat compact key={label} label={label} icon={icon}
               value={district ? <Link className={linkClass} to={districtLink(district.code)}>{district.name}</Link> : "N/A"}
-              detail={district && district.state + " · Rank " + district.rank + " · KRDI " + number(district.score)} />
+              detail={district && district.state + " · Rank #" + district.rank + " · KRDI " + number(district.score)} />
           ))}
         </div>
       </ResourceState>
 
       <div className="grid gap-5 lg:grid-cols-2">
-        <Panel title="Malaysia district development map" description="Scroll over the map to zoom. Select a district to open its profile. KRDI bands are exploratory.">
+        <Panel title="Malaysia District Development Map" description="Scroll to zoom. Select a district to open its profile.">
           <Suspense fallback={<EmptyState>Loading the interactive map…</EmptyState>}>
             <DistrictMap geometry={geometry} scores={mapScores} national />
           </Suspense>

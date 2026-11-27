@@ -19,17 +19,21 @@ export function Panel({ title, description, actions, children }) {
   );
 }
 
-export function Stat({ label, value, detail, icon: Icon, color = "text-teal-700" }) {
+export function Stat({ label, value, detail, icon: Icon, color = "text-teal-700", compact = false, prominent = false }) {
   return (
-    <article className="min-w-0 rounded-2xl border border-slate-200/80 bg-white p-5 shadow-sm">
+    <article className={"min-w-0 rounded-2xl border border-slate-200/80 bg-white shadow-sm " + (prominent ? "p-4" : "p-5")}>
       <div className="flex items-start justify-between gap-3">
         <div>
           <p className="text-sm font-medium text-slate-600">{label}</p>
-          <p className={"mt-2 break-words text-2xl font-bold tracking-tight " + color}>{value}</p>
+          <p className={"mt-2 break-words font-bold tracking-tight " + (prominent ? "text-3xl leading-tight " : "text-2xl ") + color}>{value}</p>
         </div>
-        {Icon && <div className="shrink-0 rounded-xl bg-teal-50 p-3 text-teal-700"><Icon size={19} aria-hidden="true" /></div>}
+        {Icon && <div className={"shrink-0 rounded-xl bg-teal-50 text-teal-700 " + (prominent ? "p-2" : "p-3")}><Icon size={19} aria-hidden="true" /></div>}
       </div>
-      {detail && <p className="mt-3 border-t border-slate-100 pt-3 text-sm text-slate-600">{detail}</p>}
+      {detail && (
+        <p className={compact ? "mt-2 text-xs leading-5 text-slate-500" : "mt-3 border-t border-slate-100 pt-3 text-sm text-slate-600"}>
+          {detail}
+        </p>
+      )}
     </article>
   );
 }
@@ -38,7 +42,7 @@ export function ResourceState({ resource, label, empty, children }) {
   if (resource.loading) {
     return (
       <div role="status" className="rounded-xl bg-slate-50 p-5 text-sm text-slate-600">
-        Loading {label}… The data service may take a moment to start.
+        Loading {label}…
         <div aria-hidden="true" className="mt-4 h-4 rounded bg-slate-200 motion-safe:animate-pulse" />
         <div aria-hidden="true" className="mt-2 h-4 w-3/4 rounded bg-slate-200 motion-safe:animate-pulse" />
       </div>

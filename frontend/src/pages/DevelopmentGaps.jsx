@@ -39,7 +39,7 @@ function PositionTooltip({ active, payload }) {
 function Infrastructure({ rows }) {
   const available = rows.filter(({ value }) => value);
   return (
-    <Panel title="Infrastructure access shortfalls" description="Each bar shows reported access and the remaining gap to 100% access. Shortfalls are measured in percentage points (pp).">
+    <Panel title="Infrastructure Access Shortfalls" description="Each bar shows the share of households with access and the gap to 100%.">
       {available.length ? (
         <ResponsiveContainer width="100%" minWidth={0} height={210}>
           <BarChart data={available} layout="vertical" margin={{ right: 15 }}>
@@ -85,29 +85,31 @@ function GapAnalysis({ profile }) {
         <Stat label="Potential gaps" value={number(development.summary.potential_gaps)} detail="Rank position below 25" color="text-rose-800" />
         <Stat label="Substantial infrastructure shortfalls" value={number(infrastructure.summary.substantial_gap_count)} detail="Shortfall above 15 percentage points" color="text-rose-800" />
       </div>
-      <Panel title="National benchmark position" description={benchmarkNote}>
-        <ul className="mb-3 flex flex-wrap gap-4 text-xs text-slate-700">
-          {[...Object.values(categories), unavailable].map(({ label, color }) => (
-            <li key={label} className="flex items-center gap-2"><span className="size-3 rounded-sm" aria-hidden="true" style={{ backgroundColor: color }} />{label}</li>
-          ))}
-        </ul>
-        <ResponsiveContainer width="100%" minWidth={0} height={Math.max(260, rows.length * 36 + 40)}>
-          <BarChart data={rows} layout="vertical" margin={{ right: 15 }} barSize={17}>
-            <CartesianGrid strokeDasharray="3 3" horizontal={false} />
-            <XAxis type="number" domain={[0, 100]} ticks={[0, 25, 50, 75, 100]} />
-            <YAxis type="category" dataKey="label" width={125} tick={{ fontSize: 10 }} />
-            <ReferenceLine x={25} stroke="#64748b" strokeDasharray="4 4" />
-            <ReferenceLine x={75} stroke="#64748b" strokeDasharray="4 4" />
-            <Tooltip content={<PositionTooltip />} />
-            <Bar dataKey="position" isAnimationActive={false}>
-              {rows.map(({ key, category }) => <Cell key={key} fill={category.color} />)}
-            </Bar>
-          </BarChart>
-        </ResponsiveContainer>
-        {rows.some(({ position }) => !valid(position)) && <p className="text-xs text-slate-600">Rows without a bar may have a zero or unavailable rank position. See exact values in the table below.</p>}
-      </Panel>
-      <Infrastructure rows={infrastructureRows} />
-      <Panel title="Areas for further investigation" description="Substantial infrastructure shortfalls appear first, followed by the lowest benchmark positions. Suggestions identify questions to investigate using additional evidence.">
+      <div className="grid gap-5 lg:grid-cols-2">
+        <Panel title="How the District Ranks Nationally" description={benchmarkNote}>
+          <ul className="mb-3 flex flex-wrap gap-4 text-xs text-slate-700">
+            {[...Object.values(categories), unavailable].map(({ label, color }) => (
+              <li key={label} className="flex items-center gap-2"><span className="size-3 rounded-sm" aria-hidden="true" style={{ backgroundColor: color }} />{label}</li>
+            ))}
+          </ul>
+          <ResponsiveContainer width="100%" minWidth={0} height={Math.max(260, rows.length * 36 + 40)}>
+            <BarChart data={rows} layout="vertical" margin={{ right: 15 }} barSize={17}>
+              <CartesianGrid strokeDasharray="3 3" horizontal={false} />
+              <XAxis type="number" domain={[0, 100]} ticks={[0, 25, 50, 75, 100]} />
+              <YAxis type="category" dataKey="label" width={125} tick={{ fontSize: 10 }} />
+              <ReferenceLine x={25} stroke="#64748b" strokeDasharray="4 4" />
+              <ReferenceLine x={75} stroke="#64748b" strokeDasharray="4 4" />
+              <Tooltip content={<PositionTooltip />} />
+              <Bar dataKey="position" isAnimationActive={false}>
+                {rows.map(({ key, category }) => <Cell key={key} fill={category.color} />)}
+              </Bar>
+            </BarChart>
+          </ResponsiveContainer>
+          {rows.some(({ position }) => !valid(position)) && <p className="text-xs text-slate-600">Rows without a bar may have a zero or unavailable rank position. See exact values in the table below.</p>}
+        </Panel>
+        <Infrastructure rows={infrastructureRows} />
+      </div>
+      <Panel title="Areas for Further Investigation" description="Access gaps above 15 percentage points appear first, followed by indicators where the district ranks lowest nationally.">
         <DataTable label="Development priorities" columns={["Indicator", "District value", "District median", "National rank", "Rank position", "Classification", "Investigation area"]}>
           {priorities.map(({ key, label, category, position, substantial, value }) => (
             <tr key={key}>
@@ -130,7 +132,7 @@ export default function DevelopmentGaps() {
 
   return (
     <div className="space-y-5">
-      <Panel title="Choose a district to investigate" actions={district && <Link className={linkClass + " text-sm"} to={districtLink(district.code)}>Open district profile</Link>}>
+      <Panel title="Choose a District to Investigate" actions={district && <Link className={linkClass + " text-sm"} to={districtLink(district.code)}>Open district profile</Link>}>
         <ResourceState resource={list} label="district options" empty={!list.districts.length && "No districts are available."}>
           <DistrictSelector label="Development gaps" districts={list.districts} code={district?.code} onChange={select} />
           {invalid && <p role="alert" className="mt-3 text-sm text-rose-800">That district code is unavailable. Choose a district from the list.</p>}

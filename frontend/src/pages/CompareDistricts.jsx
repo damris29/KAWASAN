@@ -37,16 +37,16 @@ function Results({ comparison, detailA, detailB }) {
             color={i ? "text-amber-800" : "text-teal-800"}
             detail={placeName(district.state) + " · Rank " + number(district.krdi.rank) + " · " + (district.krdi.stability ?? "N/A")} />
         ))}
-        <Stat label="KRDI score difference" value={valid(scoreDifference) ? number(Math.abs(scoreDifference)) : "N/A"} detail="Absolute difference in KRDI points" />
-        <Stat label="National rank difference" value={valid(rankDifference) ? number(Math.abs(rankDifference)) : "N/A"} detail="Lower rank numbers indicate stronger performance" />
+        <Stat label="KRDI score difference" value={valid(scoreDifference) ? number(Math.abs(scoreDifference)) : "N/A"} detail="Points between the two scores" />
+        <Stat label="National rank difference" value={valid(rankDifference) ? number(Math.abs(rankDifference)) : "N/A"} detail="Positions between the two districts" />
       </div>
       <ResourceState resource={detailA} label="District A dimensions">
         <ResourceState resource={detailB} label="District B dimensions">
           {profiles.every(Boolean) && <DimensionCharts first={profiles[0]} second={profiles[1]} />}
         </ResourceState>
       </ResourceState>
-      <Panel title="Socioeconomic comparison" description="Differences use A minus B. Rate differences use percentage points. Relative performance follows the indicator’s benchmark direction.">
-        <DataTable label="Socioeconomic comparison" columns={["Indicator", "A · " + districtNames[0], "B · " + districtNames[1], "Difference (A − B)", "More favorable value"]}>
+      <Panel title="Socioeconomic Comparison" description="The difference is A minus B. Differences between rates are shown in percentage points.">
+        <DataTable label="Socioeconomic comparison" columns={["Indicator", "A · " + districtNames[0], "B · " + districtNames[1], "Difference (A − B)", "District with the better result"]}>
           {Object.entries(indicators).map(([key, values]) => {
             const difference = delta(values.district_a, values.district_b);
             return (
@@ -59,7 +59,7 @@ function Results({ comparison, detailA, detailB }) {
           })}
         </DataTable>
       </Panel>
-      <Panel title="Comparison insights">
+      <Panel title="Comparison Insights">
         <ul className="list-disc space-y-2 pl-5 text-sm leading-6">
           {valid(scoreDifference) && <li>{scoreDifference === 0 ? "The districts have equal KRDI scores." : districtNames[scoreDifference > 0 ? 0 : 1] + " has the higher KRDI score by " + number(Math.abs(scoreDifference)) + " points."}</li>}
           {largest && <li>{largest.difference === 0 ? "The available dimension scores are equal." :
@@ -102,7 +102,7 @@ export default function CompareDistricts() {
 
   return (
     <div className="space-y-5">
-      <Panel title="Choose districts to compare" actions={
+      <Panel title="Choose Districts to Compare" actions={
         <button className={buttonClass + " disabled:opacity-40"} type="button" disabled={!pair} onClick={() => setParams({ a: b.code, b: a.code })}>
           <ArrowLeftRight size={16} /> Swap districts
         </button>

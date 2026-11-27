@@ -15,7 +15,7 @@ export default function DimensionCharts({ first, second }) {
   return (
     <div className={second ? "grid gap-5 xl:grid-cols-2" : "min-w-0"}>
       {second && (
-        <Panel title="Dimension scores" description="All three dimensions use the same 0–100 scale.">
+        <Panel title="Dimension Scores">
           <ResponsiveContainer width="100%" height={285} minWidth={0}>
             <BarChart data={data} layout="vertical" margin={{ right: 18 }}>
               <CartesianGrid strokeDasharray="3 3" horizontal={false} />
@@ -28,7 +28,7 @@ export default function DimensionCharts({ first, second }) {
           </ResponsiveContainer>
         </Panel>
       )}
-      <Panel title="Development profile" description="Scores range from 0 to 100. The weights beneath the chart determine each dimension’s contribution to KRDI.">
+      <Panel title="Development Profile" description="The percentages below show how much each dimension contributes to KRDI.">
         <ResponsiveContainer width="100%" height={290} minWidth={0}>
           <RadarChart data={data} outerRadius="56%">
             <PolarGrid />

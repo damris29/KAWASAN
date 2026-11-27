@@ -4,13 +4,12 @@ import { bands, districtLink, noBand, number, statesFor } from "../utils/analyti
 import { buttonClass, DataTable, EmptyState, fieldClass, linkClass, Panel } from "./Dashboard";
 
 const pageSize = 15;
-const defaults = { query: "", state: "", category: "", sort: "rank" };
+const defaults = { state: "", category: "", sort: "rank" };
 
 export default function DistrictRankingTable({ districts }) {
   const [filters, setFilters] = useState(defaults);
   const [page, setPage] = useState(0);
   const filtered = useMemo(() => districts.filter((district) =>
-    district.name.toLowerCase().includes(filters.query.trim().toLowerCase()) &&
     (!filters.state || district.state === filters.state) &&
     (!filters.category || district.category === filters.category),
   ).sort((a, b) => {
@@ -26,9 +25,8 @@ export default function DistrictRankingTable({ districts }) {
   }
 
   return (
-    <Panel title="National district rankings" description="Score bands are exploratory. Tied ranks are displayed as reported by the API.">
-      <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
-        <label className="text-sm">Search district<input type="search" className={fieldClass} value={filters.query} onChange={(e) => update("query", e.target.value)} /></label>
+    <Panel title="National District Rankings" description="Districts with the same rank share a position. The score bands are exploratory.">
+      <div className="grid gap-3 sm:grid-cols-3">
         <label className="text-sm">State or territory
           <select className={fieldClass} value={filters.state} onChange={(e) => update("state", e.target.value)}>
             <option value="">All states</option>
@@ -49,7 +47,7 @@ export default function DistrictRankingTable({ districts }) {
         </label>
       </div>
       <div className="my-4 flex flex-wrap items-center justify-between gap-3">
-        <p className="text-sm text-slate-600" role="status">{filtered.length} matching districts</p>
+        <p className="text-sm text-slate-600" role="status">{filtered.length} {filtered.length === 1 ? "matching district" : "matching districts"}</p>
         <button type="button" className={buttonClass} onClick={() => { setFilters(defaults); setPage(0); }}>Reset filters</button>
       </div>
       {visible.length ? (

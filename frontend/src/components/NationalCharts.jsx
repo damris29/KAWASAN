@@ -18,7 +18,7 @@ function RankingTooltip({ active, payload }) {
 function RankingChart({ title, districts, color }) {
   const navigate = useNavigate();
   return (
-    <Panel title={title} description="National rank · Click a bar to open its district profile.">
+    <Panel title={title} description="Select a bar to open the district profile.">
       {districts.length ? (
         <ResponsiveContainer width="100%" minWidth={0} height={205}>
           <BarChart data={districts} layout="vertical" margin={{ right: 12, bottom: 8 }}>
@@ -38,8 +38,8 @@ function RankingChart({ title, districts, color }) {
 export function NationalRankingCharts({ ranked }) {
   return (
     <div className="grid min-w-0 gap-5">
-      <RankingChart title="Five highest-ranked districts" districts={ranked.slice(0, 5)} color="#0f766e" />
-      <RankingChart title="Five lowest-ranked districts" districts={ranked.slice(-5).reverse()} color="#466c89" />
+      <RankingChart title="Five Highest-Ranked Districts" districts={ranked.slice(0, 5)} color="#0f766e" />
+      <RankingChart title="Five Lowest-Ranked Districts" districts={ranked.slice(-5).reverse()} color="#466c89" />
     </div>
   );
 }
@@ -66,7 +66,7 @@ export default function NationalCharts({ districts }) {
 
   return (
     <div className="grid gap-5 lg:grid-cols-2">
-      <Panel title="Distribution of district KRDI scores" description={observations + " districts with valid scores · 10-point bins"}>
+      <Panel title="Distribution of District KRDI Scores" description={observations + " districts grouped into 10-point score ranges"}>
         <ResponsiveContainer width="100%" minWidth={0} height={Math.max(265, 32 + stateMeans.length * 25)}>
           <BarChart data={bins} margin={{ left: 8, right: 8, bottom: 12 }}>
             <CartesianGrid strokeDasharray="3 3" vertical={false} />
@@ -78,14 +78,14 @@ export default function NationalCharts({ districts }) {
         </ResponsiveContainer>
       </Panel>
       {stateMeans.length > 0 && (
-        <Panel title="Mean district KRDI by state or territory" description="Unweighted mean of valid district scores within each state or territory. KRDI is calculated at district level.">
+        <Panel title="Average District KRDI by State or Territory" description="Each district with a score counts equally.">
           <ResponsiveContainer width="100%" minWidth={0} height={32 + stateMeans.length * 25}>
             <BarChart data={stateMeans} layout="vertical" margin={{ right: 16 }}>
               <CartesianGrid strokeDasharray="3 3" horizontal={false} />
               <XAxis type="number" domain={[0, 100]} />
               <YAxis type="category" dataKey="state" width={120} tick={{ fontSize: 11 }} />
-              <Tooltip formatter={(value, _name, entry) => [number(value), "Mean KRDI · " + entry.payload.count + " districts"]} />
-              <Bar name="Mean district KRDI" dataKey="mean" fill="#0f766e" radius={[0, 4, 4, 0]} isAnimationActive={false} />
+              <Tooltip formatter={(value, _name, entry) => [number(value), "Average KRDI · " + entry.payload.count + " districts"]} />
+              <Bar name="Average district KRDI" dataKey="mean" fill="#0f766e" radius={[0, 4, 4, 0]} isAnimationActive={false} />
             </BarChart>
           </ResponsiveContainer>
         </Panel>
