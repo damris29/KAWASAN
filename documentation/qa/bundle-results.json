@@ -1,0 +1,160 @@
+{
+  "bundle": [
+    {
+      "asset": "/assets/index-BOf9YU3C.js",
+      "bytes": 282047,
+      "markers": {
+        "private key": 0,
+        "AWS access key": 0,
+        "GitHub token": 0,
+        "OpenAI-style secret key": 0,
+        "JWT-like string": 0,
+        "Slack token": 0,
+        "Google API key": 0
+      },
+      "usesRender": false
+    },
+    {
+      "asset": "/assets/Overview-kcsvrFOE.js",
+      "bytes": 9770,
+      "markers": {
+        "private key": 0,
+        "AWS access key": 0,
+        "GitHub token": 0,
+        "OpenAI-style secret key": 0,
+        "JWT-like string": 0,
+        "Slack token": 0,
+        "Google API key": 0
+      },
+      "usesRender": false
+    },
+    {
+      "asset": "/assets/arrow-up-right-C27H_MS2.js",
+      "bytes": 402,
+      "markers": {
+        "private key": 0,
+        "AWS access key": 0,
+        "GitHub token": 0,
+        "OpenAI-style secret key": 0,
+        "JWT-like string": 0,
+        "Slack token": 0,
+        "Google API key": 0
+      },
+      "usesRender": false
+    },
+    {
+      "asset": "/assets/useDistricts-DHFy2siC.js",
+      "bytes": 478263,
+      "markers": {
+        "private key": 0,
+        "AWS access key": 0,
+        "GitHub token": 0,
+        "OpenAI-style secret key": 0,
+        "JWT-like string": 0,
+        "Slack token": 0,
+        "Google API key": 0
+      },
+      "usesRender": true
+    },
+    {
+      "asset": "/assets/DistrictMap-CMeLSXLV.js",
+      "bytes": 153651,
+      "markers": {
+        "private key": 0,
+        "AWS access key": 0,
+        "GitHub token": 0,
+        "OpenAI-style secret key": 0,
+        "JWT-like string": 0,
+        "Slack token": 0,
+        "Google API key": 0
+      },
+      "usesRender": false
+    },
+    {
+      "asset": "/assets/DistrictIntelligence-6Z5bq3fs.js",
+      "bytes": 4007,
+      "markers": {
+        "private key": 0,
+        "AWS access key": 0,
+        "GitHub token": 0,
+        "OpenAI-style secret key": 0,
+        "JWT-like string": 0,
+        "Slack token": 0,
+        "Google API key": 0
+      },
+      "usesRender": false
+    },
+    {
+      "asset": "/assets/BenchmarkTable-yX84Fekk.js",
+      "bytes": 870,
+      "markers": {
+        "private key": 0,
+        "AWS access key": 0,
+        "GitHub token": 0,
+        "OpenAI-style secret key": 0,
+        "JWT-like string": 0,
+        "Slack token": 0,
+        "Google API key": 0
+      },
+      "usesRender": false
+    },
+    {
+      "asset": "/assets/DimensionCharts-BpY6K7B6.js",
+      "bytes": 40842,
+      "markers": {
+        "private key": 0,
+        "AWS access key": 0,
+        "GitHub token": 0,
+        "OpenAI-style secret key": 0,
+        "JWT-like string": 0,
+        "Slack token": 0,
+        "Google API key": 0
+      },
+      "usesRender": false
+    },
+    {
+      "asset": "/assets/DistrictSelector-Bz2bU25k.js",
+      "bytes": 16992,
+      "markers": {
+        "private key": 0,
+        "AWS access key": 0,
+        "GitHub token": 0,
+        "OpenAI-style secret key": 0,
+        "JWT-like string": 0,
+        "Slack token": 0,
+        "Google API key": 0
+      },
+      "usesRender": false
+    },
+    {
+      "asset": "/assets/CompareDistricts-bQivEAbJ.js",
+      "bytes": 4946,
+      "markers": {
+        "private key": 0,
+        "AWS access key": 0,
+        "GitHub token": 0,
+        "OpenAI-style secret key": 0,
+        "JWT-like string": 0,
+        "Slack token": 0,
+        "Google API key": 0
+      },
+      "usesRender": false
+    },
+    {
+      "asset": "/assets/DevelopmentGaps-rUPEzH-g.js",
+      "bytes": 11550,
+      "markers": {
+        "private key": 0,
+        "AWS access key": 0,
+        "GitHub token": 0,
+        "OpenAI-style secret key": 0,
+        "JWT-like string": 0,
+        "Slack token": 0,
+        "Google API key": 0
+      },
+      "usesRender": false
+    }
+  ],
+  "totalBytes": 1003340,
+  "markerCount": 0
+}

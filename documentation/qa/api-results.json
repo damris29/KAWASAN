@@ -1,0 +1,224 @@
+{
+  "status": {
+    "/": [
+      200,
+      249,
+      63,
+      "https://kawasan-gamma.vercel.app"
+    ],
+    "/health": [
+      200,
+      247,
+      48,
+      "https://kawasan-gamma.vercel.app"
+    ],
+    "/docs": [
+      200,
+      213,
+      1010,
+      "https://kawasan-gamma.vercel.app"
+    ],
+    "/api/districts": [
+      200,
+      240,
+      22815,
+      "https://kawasan-gamma.vercel.app"
+    ],
+    "/api/districts/1_2": [
+      200,
+      57,
+      285,
+      "https://kawasan-gamma.vercel.app"
+    ],
+    "/api/districts/1_2/intelligence": [
+      200,
+      67,
+      806,
+      "https://kawasan-gamma.vercel.app"
+    ],
+    "/api/districts/1_2/overview": [
+      200,
+      261,
+      1005,
+      "https://kawasan-gamma.vercel.app"
+    ],
+    "/api/districts/1_2/benchmark": [
+      200,
+      78,
+      1206,
+      "https://kawasan-gamma.vercel.app"
+    ],
+    "/api/districts/1_2/gaps": [
+      200,
+      55,
+      1266,
+      "https://kawasan-gamma.vercel.app"
+    ],
+    "/api/districts/1_2/infrastructure-gaps": [
+      200,
+      109,
+      520,
+      "https://kawasan-gamma.vercel.app"
+    ],
+    "/api/districts/1_2/full-intelligence": [
+      200,
+      296,
+      4025,
+      "https://kawasan-gamma.vercel.app"
+    ],
+    "/api/compare?district_a=1_2&district_b=13_37": [
+      200,
+      184,
+      801,
+      "https://kawasan-gamma.vercel.app"
+    ],
+    "/api/map/districts": [
+      200,
+      204,
+      26912,
+      "https://kawasan-gamma.vercel.app"
+    ],
+    "/api/map/geojson": [
+      200,
+      1194,
+      792504,
+      "https://kawasan-gamma.vercel.app"
+    ],
+    "/api/map/geojson/1_2": [
+      200,
+      305,
+      3293,
+      "https://kawasan-gamma.vercel.app"
+    ],
+    "/api/map/districts/1_2/dashboard": [
+      200,
+      1487,
+      7370,
+      "https://kawasan-gamma.vercel.app"
+    ],
+    "/api/districts/999_999": [
+      404,
+      1103,
+      0,
+      "https://kawasan-gamma.vercel.app"
+    ],
+    "/api/map/geojson/999_999": [
+      404,
+      1189,
+      0,
+      "https://kawasan-gamma.vercel.app"
+    ],
+    "/api/compare?district_a=1_2&district_b=999_999": [
+      404,
+      276,
+      0,
+      "https://kawasan-gamma.vercel.app"
+    ]
+  },
+  "unapproved_origin": [
+    200,
+    102,
+    22815,
+    null
+  ],
+  "warm_ms": {
+    "/health": [
+      71,
+      56,
+      139
+    ],
+    "/api/districts": [
+      93,
+      64,
+      56
+    ],
+    "/api/map/geojson": [
+      784,
+      877,
+      1611
+    ],
+    "/api/districts/1_2/full-intelligence": [
+      62,
+      92,
+      114
+    ],
+    "/api/compare?district_a=1_2&district_b=13_37": [
+      87,
+      200,
+      194
+    ]
+  },
+  "issues": [],
+  "coverage": 155,
+  "score_mean": 66.91793548387096,
+  "histogram": [
+    0,
+    0,
+    2,
+    2,
+    8,
+    21,
+    57,
+    51,
+    12,
+    2
+  ],
+  "state_means": {
+    "selangor": 84.54,
+    "terengganu": 78.8257,
+    "johor": 75.16,
+    "pulau pinang": 74.8,
+    "sarawak": 60.8852,
+    "melaka": 76.42,
+    "sabah": 57.4811,
+    "pahang": 74.0155,
+    "kedah": 70.6917,
+    "negeri sembilan": 68.5886,
+    "perak": 68.01,
+    "kelantan": 62.7873
+  },
+  "samples": [
+    {
+      "code": "10_3",
+      "district": "kuala langat",
+      "state": "selangor",
+      "rank": 1,
+      "missing_education": 0
+    },
+    {
+      "code": "13_37",
+      "district": "bukit mabong",
+      "state": "sarawak",
+      "rank": 155,
+      "missing_education": 11
+    },
+    {
+      "code": "2_4",
+      "district": "kuala muda",
+      "state": "kedah",
+      "rank": 78,
+      "missing_education": 8
+    },
+    {
+      "code": "12_18",
+      "district": "sipitang",
+      "state": "sabah",
+      "rank": 80,
+      "missing_education": 0
+    },
+    {
+      "code": "13_40",
+      "district": "telang usan",
+      "state": "sarawak",
+      "rank": 75,
+      "missing_education": 11
+    },
+    {
+      "code": "1_2",
+      "district": "johor bahru",
+      "state": "johor",
+      "rank": 13,
+      "missing_education": 0
+    }
+  ]
+}

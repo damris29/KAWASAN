@@ -1,0 +1,471 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\TUFGAM~1\\AppData\\Local\\Temp\\kawasan-playwright-qa\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config",
+      "C:\\Users\\TUFGAM~1\\AppData\\Local\\Temp\\kawasan-playwright-qa\\playwright.config.cjs",
+      "--workers=1"
+    ],
+    "configFile": "C:\\Users\\TUFGAM~1\\AppData\\Local\\Temp\\kawasan-playwright-qa\\playwright.config.cjs",
+    "rootDir": "C:/Users/TUFGAM~1/AppData/Local/Temp/kawasan-playwright-qa",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/TUF GAMING/Desktop/KAWASAN/KAWASAN/documentation/qa/headed-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/TUFGAM~1/AppData/Local/Temp/kawasan-playwright-qa",
+        "testIgnore": [],
+        "testMatch": [
+          "production.spec.cjs"
+        ],
+        "timeout": 95000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\TUF GAMING\\Desktop\\KAWASAN\\KAWASAN\\documentation\\qa\\headed-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "C:\\Users\\TUFGAM~1\\AppData\\Local\\Temp\\kawasan-playwright-qa",
+        "snapshotDir": "C:\\Users\\TUFGAM~1\\AppData\\Local\\Temp\\kawasan-playwright-qa",
+        "testIgnore": [],
+        "testMatch": "production.spec.cjs",
+        "timeout": 95000,
+        "use": {
+          "baseURL": "https://kawasan-gamma.vercel.app",
+          "browserName": "chromium",
+          "headless": false,
+          "actionTimeout": 12000,
+          "launchOptions": {
+            "slowMo": 800
+          },
+          "viewport": {
+            "width": 1366,
+            "height": 768
+          },
+          "video": "on",
+          "trace": "on",
+          "screenshot": "only-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "C:\\Users\\TUF GAMING\\Desktop\\KAWASAN\\KAWASAN\\documentation\\qa\\headed-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "production.spec.cjs",
+      "file": "production.spec.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "National Overview",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 95000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 21007,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "RUN  Load production Overview and 155 boundaries\n"
+                    },
+                    {
+                      "text": "PASS Load production Overview and 155 boundaries\n"
+                    },
+                    {
+                      "text": "RUN  Filter ranking by state and score band, sort, and paginate\n"
+                    },
+                    {
+                      "text": "PASS Filter ranking by state and score band, sort, and paginate\n"
+                    },
+                    {
+                      "text": "RUN  Hover ranking, distribution and state charts\n"
+                    },
+                    {
+                      "text": "PASS Hover ranking, distribution and state charts\n"
+                    },
+                    {
+                      "text": "RUN  Zoom, hover and click a real district polygon\n"
+                    },
+                    {
+                      "text": "PASS Zoom, hover and click a real district polygon\n"
+                    },
+                    {
+                      "text": "RUN  Production browser console and network\n"
+                    },
+                    {
+                      "text": "PASS Production browser console and network\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Load production Overview and 155 boundaries",
+                      "duration": 2037
+                    },
+                    {
+                      "title": "Filter ranking by state and score band, sort, and paginate",
+                      "duration": 5215
+                    },
+                    {
+                      "title": "Hover ranking, distribution and state charts",
+                      "duration": 7969
+                    },
+                    {
+                      "title": "Zoom, hover and click a real district polygon",
+                      "duration": 4493
+                    }
+                  ],
+                  "startTime": "2026-11-27T16:07:34.848Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\TUF GAMING\\Desktop\\KAWASAN\\KAWASAN\\documentation\\qa\\headed-artifacts\\production-National-Overview\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\TUF GAMING\\Desktop\\KAWASAN\\KAWASAN\\documentation\\qa\\headed-artifacts\\production-National-Overview\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "08264f135108b30d25ef-dbb2b6eb7cd3db444ea0",
+          "file": "production.spec.cjs",
+          "line": 55,
+          "column": 1
+        },
+        {
+          "title": "District Intelligence",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 95000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9574,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "RUN  Open District Intelligence from navigation and switch state/district\n"
+                    },
+                    {
+                      "text": "PASS Open District Intelligence from navigation and switch state/district\n"
+                    },
+                    {
+                      "text": "RUN  Inspect development chart and zoom boundary\n"
+                    },
+                    {
+                      "text": "PASS Inspect development chart and zoom boundary\n"
+                    },
+                    {
+                      "text": "RUN  Refresh shareable profile URL\n"
+                    },
+                    {
+                      "text": "PASS Refresh shareable profile URL\n"
+                    },
+                    {
+                      "text": "RUN  Production browser console and network\n"
+                    },
+                    {
+                      "text": "PASS Production browser console and network\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Open District Intelligence from navigation and switch state/district",
+                      "duration": 3812
+                    },
+                    {
+                      "title": "Inspect development chart and zoom boundary",
+                      "duration": 3917
+                    },
+                    {
+                      "title": "Refresh shareable profile URL",
+                      "duration": 986
+                    }
+                  ],
+                  "startTime": "2026-11-27T16:07:57.069Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\TUF GAMING\\Desktop\\KAWASAN\\KAWASAN\\documentation\\qa\\headed-artifacts\\production-District-Intelligence\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\TUF GAMING\\Desktop\\KAWASAN\\KAWASAN\\documentation\\qa\\headed-artifacts\\production-District-Intelligence\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "08264f135108b30d25ef-b1d5b82b063758981d5a",
+          "file": "production.spec.cjs",
+          "line": 104,
+          "column": 1
+        },
+        {
+          "title": "Compare Districts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 95000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9704,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "RUN  Open comparison and select both districts\n"
+                    },
+                    {
+                      "text": "PASS Open comparison and select both districts\n"
+                    },
+                    {
+                      "text": "RUN  Hover comparison bars and radar, then capture\n"
+                    },
+                    {
+                      "text": "PASS Hover comparison bars and radar, then capture\n"
+                    },
+                    {
+                      "text": "RUN  Swap districts and reject a duplicate pair\n"
+                    },
+                    {
+                      "text": "PASS Swap districts and reject a duplicate pair\n"
+                    },
+                    {
+                      "text": "RUN  Production browser console and network\n"
+                    },
+                    {
+                      "text": "PASS Production browser console and network\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Open comparison and select both districts",
+                      "duration": 3820
+                    },
+                    {
+                      "title": "Hover comparison bars and radar, then capture",
+                      "duration": 2976
+                    },
+                    {
+                      "title": "Swap districts and reject a duplicate pair",
+                      "duration": 1907
+                    }
+                  ],
+                  "startTime": "2026-11-27T16:08:07.046Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\TUF GAMING\\Desktop\\KAWASAN\\KAWASAN\\documentation\\qa\\headed-artifacts\\production-Compare-Districts\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\TUF GAMING\\Desktop\\KAWASAN\\KAWASAN\\documentation\\qa\\headed-artifacts\\production-Compare-Districts\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "08264f135108b30d25ef-bdd430ab69da4b720498",
+          "file": "production.spec.cjs",
+          "line": 132,
+          "column": 1
+        },
+        {
+          "title": "Development Gaps",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 95000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9551,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "RUN  Open Development Gaps and select Bukit Mabong\n"
+                    },
+                    {
+                      "text": "PASS Open Development Gaps and select Bukit Mabong\n"
+                    },
+                    {
+                      "text": "RUN  Hover benchmark and infrastructure charts\n"
+                    },
+                    {
+                      "text": "PASS Hover benchmark and infrastructure charts\n"
+                    },
+                    {
+                      "text": "RUN  Follow the district profile link\n"
+                    },
+                    {
+                      "text": "PASS Follow the district profile link\n"
+                    },
+                    {
+                      "text": "RUN  Production browser console and network\n"
+                    },
+                    {
+                      "text": "PASS Production browser console and network\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Open Development Gaps and select Bukit Mabong",
+                      "duration": 3766
+                    },
+                    {
+                      "title": "Hover benchmark and infrastructure charts",
+                      "duration": 3850
+                    },
+                    {
+                      "title": "Follow the district profile link",
+                      "duration": 908
+                    }
+                  ],
+                  "startTime": "2026-11-27T16:08:17.326Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\TUF GAMING\\Desktop\\KAWASAN\\KAWASAN\\documentation\\qa\\headed-artifacts\\production-Development-Gaps\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\TUF GAMING\\Desktop\\KAWASAN\\KAWASAN\\documentation\\qa\\headed-artifacts\\production-Development-Gaps\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "08264f135108b30d25ef-ce5c06546c3f9b22eda5",
+          "file": "production.spec.cjs",
+          "line": 156,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-27T16:07:33.989Z",
+    "duration": 53844.148,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

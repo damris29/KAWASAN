@@ -1,0 +1,1678 @@
+{
+  "viewports": [
+    {
+      "stage": "desktop/overview",
+      "file": "documentation/qa/screenshots/desktop-overview.png",
+      "ready": 2066,
+      "width": 1920,
+      "scrollWidth": 1905,
+      "height": 2863,
+      "nav": {
+        "responseStart": 77,
+        "domContentLoaded": 427,
+        "load": 432
+      },
+      "charts": 4,
+      "labels": [
+        "Malaysia District Development Map",
+        "Five Highest-Ranked Districts",
+        "Five Lowest-Ranked Districts",
+        "Distribution of District KRDI Scores",
+        "Average District KRDI by State or Territory",
+        "National District Rankings"
+      ],
+      "tables": 1,
+      "geometry": 155,
+      "resources": [
+        [
+          "https://kawasan-gamma.vercel.app/assets/index-BOf9YU3C.js",
+          92349,
+          92049,
+          282047
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/Overview-kcsvrFOE.js",
+          4155,
+          3855,
+          9770
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/arrow-up-right-C27H_MS2.js",
+          702,
+          402,
+          402
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/useDistricts-DHFy2siC.js",
+          142210,
+          141910,
+          478263
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/DistrictMap-CMeLSXLV.js",
+          47875,
+          47575,
+          153651
+        ]
+      ]
+    },
+    {
+      "stage": "desktop/district-intelligence",
+      "file": "documentation/qa/screenshots/desktop-district-intelligence.png",
+      "ready": 713,
+      "width": 1920,
+      "scrollWidth": 1905,
+      "height": 2914,
+      "nav": {
+        "responseStart": 25,
+        "domContentLoaded": 73,
+        "load": 74
+      },
+      "charts": 1,
+      "labels": [
+        "Select a District",
+        "Johor Bahru",
+        "Development Profile",
+        "Johor Bahru Boundary",
+        "Socioeconomic Indicators",
+        "National District Benchmarking"
+      ],
+      "tables": 6,
+      "geometry": 1,
+      "resources": [
+        [
+          "https://kawasan-gamma.vercel.app/assets/index-BOf9YU3C.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/DistrictIntelligence-6Z5bq3fs.js",
+          1995,
+          1695,
+          4007
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/arrow-up-right-C27H_MS2.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/BenchmarkTable-yX84Fekk.js",
+          1170,
+          870,
+          870
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/DimensionCharts-BpY6K7B6.js",
+          11188,
+          10888,
+          40842
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/useDistricts-DHFy2siC.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/DistrictSelector-Bz2bU25k.js",
+          6024,
+          5724,
+          16992
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/DistrictMap-CMeLSXLV.js",
+          300,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "stage": "desktop/compare-districts",
+      "file": "documentation/qa/screenshots/desktop-compare-districts.png",
+      "ready": 578,
+      "width": 1920,
+      "scrollWidth": 1905,
+      "height": 1877,
+      "nav": {
+        "responseStart": 28,
+        "domContentLoaded": 75,
+        "load": 76
+      },
+      "charts": 2,
+      "labels": [
+        "Choose Districts to Compare",
+        "Dimension Scores",
+        "Development Profile",
+        "Socioeconomic Comparison",
+        "Comparison Insights"
+      ],
+      "tables": 1,
+      "geometry": 0,
+      "resources": [
+        [
+          "https://kawasan-gamma.vercel.app/assets/index-BOf9YU3C.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/CompareDistricts-bQivEAbJ.js",
+          2431,
+          2131,
+          4946
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/DimensionCharts-BpY6K7B6.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/useDistricts-DHFy2siC.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/DistrictSelector-Bz2bU25k.js",
+          300,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "stage": "desktop/development-gaps",
+      "file": "documentation/qa/screenshots/desktop-development-gaps.png",
+      "ready": 609,
+      "width": 1920,
+      "scrollWidth": 1905,
+      "height": 1679,
+      "nav": {
+        "responseStart": 21,
+        "domContentLoaded": 70,
+        "load": 71
+      },
+      "charts": 2,
+      "labels": [
+        "Choose a District to Investigate",
+        "How the District Ranks Nationally",
+        "Infrastructure Access Shortfalls",
+        "Areas for Further Investigation"
+      ],
+      "tables": 2,
+      "geometry": 0,
+      "resources": [
+        [
+          "https://kawasan-gamma.vercel.app/assets/index-BOf9YU3C.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/DevelopmentGaps-rUPEzH-g.js",
+          4856,
+          4556,
+          11550
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/useDistricts-DHFy2siC.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/DistrictSelector-Bz2bU25k.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/BenchmarkTable-yX84Fekk.js",
+          300,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "stage": "laptop/overview",
+      "file": "documentation/qa/screenshots/laptop-overview.png",
+      "ready": 2099,
+      "width": 1366,
+      "scrollWidth": 1351,
+      "height": 2923,
+      "nav": {
+        "responseStart": 16,
+        "domContentLoaded": 65,
+        "load": 65
+      },
+      "charts": 4,
+      "labels": [
+        "Malaysia District Development Map",
+        "Five Highest-Ranked Districts",
+        "Five Lowest-Ranked Districts",
+        "Distribution of District KRDI Scores",
+        "Average District KRDI by State or Territory",
+        "National District Rankings"
+      ],
+      "tables": 1,
+      "geometry": 155,
+      "resources": [
+        [
+          "https://kawasan-gamma.vercel.app/assets/index-BOf9YU3C.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/Overview-kcsvrFOE.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/arrow-up-right-C27H_MS2.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/useDistricts-DHFy2siC.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/DistrictMap-CMeLSXLV.js",
+          300,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "stage": "laptop/district-intelligence",
+      "file": "documentation/qa/screenshots/laptop-district-intelligence.png",
+      "ready": 1051,
+      "width": 1366,
+      "scrollWidth": 1351,
+      "height": 2961,
+      "nav": {
+        "responseStart": 189,
+        "domContentLoaded": 323,
+        "load": 323
+      },
+      "charts": 1,
+      "labels": [
+        "Select a District",
+        "Johor Bahru",
+        "Development Profile",
+        "Johor Bahru Boundary",
+        "Socioeconomic Indicators",
+        "National District Benchmarking"
+      ],
+      "tables": 6,
+      "geometry": 1,
+      "resources": [
+        [
+          "https://kawasan-gamma.vercel.app/assets/index-BOf9YU3C.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/DistrictIntelligence-6Z5bq3fs.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/arrow-up-right-C27H_MS2.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/BenchmarkTable-yX84Fekk.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/DimensionCharts-BpY6K7B6.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/useDistricts-DHFy2siC.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/DistrictSelector-Bz2bU25k.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/DistrictMap-CMeLSXLV.js",
+          300,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "stage": "laptop/compare-districts",
+      "file": "documentation/qa/screenshots/laptop-compare-districts.png",
+      "ready": 652,
+      "width": 1366,
+      "scrollWidth": 1351,
+      "height": 1921,
+      "nav": {
+        "responseStart": 20,
+        "domContentLoaded": 61,
+        "load": 62
+      },
+      "charts": 2,
+      "labels": [
+        "Choose Districts to Compare",
+        "Dimension Scores",
+        "Development Profile",
+        "Socioeconomic Comparison",
+        "Comparison Insights"
+      ],
+      "tables": 1,
+      "geometry": 0,
+      "resources": [
+        [
+          "https://kawasan-gamma.vercel.app/assets/index-BOf9YU3C.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/CompareDistricts-bQivEAbJ.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/DimensionCharts-BpY6K7B6.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/useDistricts-DHFy2siC.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/DistrictSelector-Bz2bU25k.js",
+          300,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "stage": "laptop/development-gaps",
+      "file": "documentation/qa/screenshots/laptop-development-gaps.png",
+      "ready": 612,
+      "width": 1366,
+      "scrollWidth": 1351,
+      "height": 1897,
+      "nav": {
+        "responseStart": 19,
+        "domContentLoaded": 55,
+        "load": 55
+      },
+      "charts": 2,
+      "labels": [
+        "Choose a District to Investigate",
+        "How the District Ranks Nationally",
+        "Infrastructure Access Shortfalls",
+        "Areas for Further Investigation"
+      ],
+      "tables": 2,
+      "geometry": 0,
+      "resources": [
+        [
+          "https://kawasan-gamma.vercel.app/assets/index-BOf9YU3C.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/DevelopmentGaps-rUPEzH-g.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/useDistricts-DHFy2siC.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/DistrictSelector-Bz2bU25k.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/BenchmarkTable-yX84Fekk.js",
+          300,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "stage": "tablet/overview",
+      "file": "documentation/qa/screenshots/tablet-overview.png",
+      "ready": 1689,
+      "width": 768,
+      "scrollWidth": 753,
+      "height": 4521,
+      "nav": {
+        "responseStart": 22,
+        "domContentLoaded": 79,
+        "load": 79
+      },
+      "charts": 4,
+      "labels": [
+        "Malaysia District Development Map",
+        "Five Highest-Ranked Districts",
+        "Five Lowest-Ranked Districts",
+        "Distribution of District KRDI Scores",
+        "Average District KRDI by State or Territory",
+        "National District Rankings"
+      ],
+      "tables": 1,
+      "geometry": 155,
+      "resources": [
+        [
+          "https://kawasan-gamma.vercel.app/assets/index-BOf9YU3C.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/Overview-kcsvrFOE.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/arrow-up-right-C27H_MS2.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/useDistricts-DHFy2siC.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/DistrictMap-CMeLSXLV.js",
+          300,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "stage": "tablet/district-intelligence",
+      "file": "documentation/qa/screenshots/tablet-district-intelligence.png",
+      "ready": 584,
+      "width": 768,
+      "scrollWidth": 753,
+      "height": 4618,
+      "nav": {
+        "responseStart": 17,
+        "domContentLoaded": 65,
+        "load": 65
+      },
+      "charts": 1,
+      "labels": [
+        "Select a District",
+        "Johor Bahru",
+        "Development Profile",
+        "Johor Bahru Boundary",
+        "Socioeconomic Indicators",
+        "National District Benchmarking"
+      ],
+      "tables": 6,
+      "geometry": 1,
+      "resources": [
+        [
+          "https://kawasan-gamma.vercel.app/assets/index-BOf9YU3C.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/DistrictIntelligence-6Z5bq3fs.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/arrow-up-right-C27H_MS2.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/BenchmarkTable-yX84Fekk.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/DimensionCharts-BpY6K7B6.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/useDistricts-DHFy2siC.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/DistrictSelector-Bz2bU25k.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/DistrictMap-CMeLSXLV.js",
+          300,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "stage": "tablet/compare-districts",
+      "file": "documentation/qa/screenshots/tablet-compare-districts.png",
+      "ready": 809,
+      "width": 768,
+      "scrollWidth": 753,
+      "height": 2760,
+      "nav": {
+        "responseStart": 77,
+        "domContentLoaded": 199,
+        "load": 199
+      },
+      "charts": 2,
+      "labels": [
+        "Choose Districts to Compare",
+        "Dimension Scores",
+        "Development Profile",
+        "Socioeconomic Comparison",
+        "Comparison Insights"
+      ],
+      "tables": 1,
+      "geometry": 0,
+      "resources": [
+        [
+          "https://kawasan-gamma.vercel.app/assets/index-BOf9YU3C.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/CompareDistricts-bQivEAbJ.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/DimensionCharts-BpY6K7B6.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/useDistricts-DHFy2siC.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/DistrictSelector-Bz2bU25k.js",
+          300,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "stage": "tablet/development-gaps",
+      "file": "documentation/qa/screenshots/tablet-development-gaps.png",
+      "ready": 720,
+      "width": 768,
+      "scrollWidth": 753,
+      "height": 2779,
+      "nav": {
+        "responseStart": 16,
+        "domContentLoaded": 59,
+        "load": 60
+      },
+      "charts": 2,
+      "labels": [
+        "Choose a District to Investigate",
+        "How the District Ranks Nationally",
+        "Infrastructure Access Shortfalls",
+        "Areas for Further Investigation"
+      ],
+      "tables": 2,
+      "geometry": 0,
+      "resources": [
+        [
+          "https://kawasan-gamma.vercel.app/assets/index-BOf9YU3C.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/DevelopmentGaps-rUPEzH-g.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/useDistricts-DHFy2siC.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/DistrictSelector-Bz2bU25k.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/BenchmarkTable-yX84Fekk.js",
+          300,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "stage": "mobile/overview",
+      "file": "documentation/qa/screenshots/mobile-overview.png",
+      "ready": 1574,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 4893,
+      "nav": {
+        "responseStart": 103,
+        "domContentLoaded": 239,
+        "load": 239
+      },
+      "charts": 4,
+      "labels": [
+        "Malaysia District Development Map",
+        "Five Highest-Ranked Districts",
+        "Five Lowest-Ranked Districts",
+        "Distribution of District KRDI Scores",
+        "Average District KRDI by State or Territory",
+        "National District Rankings"
+      ],
+      "tables": 1,
+      "geometry": 155,
+      "resources": [
+        [
+          "https://kawasan-gamma.vercel.app/assets/index-BOf9YU3C.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/Overview-kcsvrFOE.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/arrow-up-right-C27H_MS2.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/useDistricts-DHFy2siC.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/DistrictMap-CMeLSXLV.js",
+          300,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "stage": "mobile/district-intelligence",
+      "file": "documentation/qa/screenshots/mobile-district-intelligence.png",
+      "ready": 848,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 5480,
+      "nav": {
+        "responseStart": 18,
+        "domContentLoaded": 146,
+        "load": 146
+      },
+      "charts": 1,
+      "labels": [
+        "Select a District",
+        "Johor Bahru",
+        "Development Profile",
+        "Johor Bahru Boundary",
+        "Socioeconomic Indicators",
+        "National District Benchmarking"
+      ],
+      "tables": 6,
+      "geometry": 1,
+      "resources": [
+        [
+          "https://kawasan-gamma.vercel.app/assets/index-BOf9YU3C.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/DistrictIntelligence-6Z5bq3fs.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/arrow-up-right-C27H_MS2.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/BenchmarkTable-yX84Fekk.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/DimensionCharts-BpY6K7B6.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/useDistricts-DHFy2siC.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/DistrictSelector-Bz2bU25k.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/DistrictMap-CMeLSXLV.js",
+          300,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "stage": "mobile/compare-districts",
+      "file": "documentation/qa/screenshots/mobile-compare-districts.png",
+      "ready": 643,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 3640,
+      "nav": {
+        "responseStart": 19,
+        "domContentLoaded": 67,
+        "load": 67
+      },
+      "charts": 2,
+      "labels": [
+        "Choose Districts to Compare",
+        "Dimension Scores",
+        "Development Profile",
+        "Socioeconomic Comparison",
+        "Comparison Insights"
+      ],
+      "tables": 1,
+      "geometry": 0,
+      "resources": [
+        [
+          "https://kawasan-gamma.vercel.app/assets/index-BOf9YU3C.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/CompareDistricts-bQivEAbJ.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/DimensionCharts-BpY6K7B6.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/useDistricts-DHFy2siC.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/DistrictSelector-Bz2bU25k.js",
+          300,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "stage": "mobile/development-gaps",
+      "file": "documentation/qa/screenshots/mobile-development-gaps.png",
+      "ready": 581,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 3369,
+      "nav": {
+        "responseStart": 18,
+        "domContentLoaded": 60,
+        "load": 60
+      },
+      "charts": 2,
+      "labels": [
+        "Choose a District to Investigate",
+        "How the District Ranks Nationally",
+        "Infrastructure Access Shortfalls",
+        "Areas for Further Investigation"
+      ],
+      "tables": 2,
+      "geometry": 0,
+      "resources": [
+        [
+          "https://kawasan-gamma.vercel.app/assets/index-BOf9YU3C.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/DevelopmentGaps-rUPEzH-g.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/useDistricts-DHFy2siC.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/DistrictSelector-Bz2bU25k.js",
+          300,
+          0,
+          0
+        ],
+        [
+          "https://kawasan-gamma.vercel.app/assets/BenchmarkTable-yX84Fekk.js",
+          300,
+          0,
+          0
+        ]
+      ]
+    }
+  ],
+  "journeys": {
+    "overview interactions": {
+      "pass": false,
+      "error": "Error: Timed out: document.body?.innerText.includes(\"16?30 of 155\") KAWASAN\n\nMALAYSIA’S DISTRICT DATA\n\nNational Overview\nDistrict Intelligence\nCompare Districts\nDevelopment Gaps\n\nDeveloped by Max Deploystappen\n\nNational Overview\n\nSee how development scores vary across Malaysia.\n\nData year\n2024\nDistrict Development Across Malaysia\n\nSee how districts compare on income, equality, and access to basic services.\n\nExplore districts\n\nTotal districts\n\n155\n\nAverage district KRDI\n\n66.92\n\nDistrict scores weighted equally\n\nHighest-ranked district\n\nKuala Langat\n\nSelangor · Rank #1 · KRDI 97.79\n\nLowest-ranked district\n\nBukit Mabong\n\nSarawak · Rank #155 · KRDI 23.92\n\nMalaysia District Development Map\n\nScroll to zoom. Select a district to open its profile.\n\n+\n−\n Leaflet\nReset map view\nHigh · 80–100\nModerate · 60–<80\nLow · 40–<60\nVery low · 0–<40\nN/A · Missing score\nFive Highest-Ranked Districts\n\nSelect a bar to open the district profile.\n\n0\n25\n50\n75\n100\nKRDI score\nKuala Langat\nHulu Langat\nSepang\nKuala Nerus\nSetiu\nFive Lowest-Ranked Districts\n\nSelect a bar to open the d"
+    },
+    "district values and switching": {
+      "pass": true,
+      "checks": [
+        {
+          "code": "10_3",
+          "rank": 1,
+          "missingEducation": 0,
+          "uiMissingEducation": 0,
+          "cards": [
+            "97.79",
+            "1",
+            "Very stable",
+            "0",
+            "326.4 thousand",
+            "RM 10,583",
+            "0.3%",
+            "1.2%"
+          ]
+        },
+        {
+          "code": "12_18",
+          "rank": 80,
+          "missingEducation": 0,
+          "uiMissingEducation": 0,
+          "cards": [
+            "68.05",
+            "80",
+            "Moderately stable",
+            "15",
+            "40.5 thousand",
+            "RM 4,606",
+            "15.3%",
+            "8.7%"
+          ]
+        },
+        {
+          "code": "13_40",
+          "rank": 75,
+          "missingEducation": 11,
+          "uiMissingEducation": 11,
+          "cards": [
+            "68.33",
+            "75",
+            "Highly weight-sensitive",
+            "64",
+            "17.4 thousand",
+            "RM 4,281",
+            "1.3%",
+            "1.5%"
+          ]
+        },
+        {
+          "code": "13_37",
+          "rank": 155,
+          "missingEducation": 11,
+          "uiMissingEducation": 11,
+          "cards": [
+            "23.92",
+            "155",
+            "Very stable",
+            "1",
+            "10.6 thousand",
+            "RM 2,589",
+            "6.3%",
+            "2.8%"
+          ]
+        }
+      ],
+      "switchingMs": 564
+    },
+    "comparison table, swap and duplicate": {
+      "pass": true,
+      "cards": [
+        "80.11",
+        "23.92",
+        "56.19",
+        "142"
+      ],
+      "rows": [
+        [
+          "Median household income",
+          "RM 8,977",
+          "RM 2,589",
+          "+RM 6,388",
+          "District A"
+        ],
+        [
+          "Absolute poverty",
+          "1.9%",
+          "6.3%",
+          "-4.4 pp",
+          "District A"
+        ],
+        [
+          "Relative poverty",
+          "9.9%",
+          "54.2%",
+          "-44.3 pp",
+          "District A"
+        ],
+        [
+          "Gini coefficient",
+          "0.35",
+          "0.333",
+          "+0.017",
+          "District B"
+        ],
+        [
+          "Labour force participation rate",
+          "74.6%",
+          "64.4%",
+          "+10.2 pp",
+          "District A"
+        ],
+        [
+          "Unemployment rate",
+          "2.7%",
+          "2.8%",
+          "-0.1 pp",
+          "District A"
+        ],
+        [
+          "Piped water access",
+          "99.99%",
+          "25%",
+          "+74.99 pp",
+          "District A"
+        ],
+        [
+          "Sanitation access",
+          "100%",
+          "100%",
+          "0 pp",
+          "Tie"
+        ],
+        [
+          "Electricity access",
+          "100%",
+          "54.17%",
+          "+45.83 pp",
+          "District A"
+        ]
+      ]
+    },
+    "gaps classifications and values": {
+      "pass": true,
+      "cards": [
+        1,
+        4,
+        4,
+        2
+      ],
+      "table": [
+        [
+          [
+            "Piped water access",
+            "25%",
+            "75 pp",
+            "Substantial shortfall"
+          ],
+          [
+            "Sanitation access",
+            "100%",
+            "0 pp",
+            "Near-universal access"
+          ],
+          [
+            "Electricity access",
+            "54.17%",
+            "45.83 pp",
+            "Substantial shortfall"
+          ]
+        ],
+        [
+          [
+            "Piped water access",
+            "25%",
+            "98.99%",
+            "155 / 155",
+            "0",
+            "Potential gapSubstantial shortfall",
+            "Review household water accessibility and infrastructure coverage."
+          ],
+          [
+            "Electricity access",
+            "54.17%",
+            "100%",
+            "155 / 155",
+            "0",
+            "Potential gapSubstantial shortfall",
+            "Review electricity connection and service coverage."
+          ],
+          [
+            "Median household income",
+            "RM 2,589",
+            "RM 4,606",
+            "155 / 155",
+            "0",
+            "Potential gap",
+            "Review household income levels and the local distribution of earnings."
+          ],
+          [
+            "Relative poverty",
+            "54.2%",
+            "14.3%",
+            "155 / 155",
+            "0",
+            "Potential gap",
+            "Review income disparities and household living conditions."
+          ],
+          [
+            "Labour force participation rate",
+            "64.4%",
+            "66.8%",
+            "104 / 155",
+            "33.12",
+            "Middle range",
+            "—"
+          ],
+          [
+            "Gini coefficient",
+            "0.333",
+            "0.328",
+            "83 / 155",
+            "46.75",
+            "Middle range",
+            "—"
+          ],
+          [
+            "Unemployment rate",
+            "2.8%",
+            "2.9%",
+            "71 / 155",
+            "54.55",
+            "Middle range",
+            "—"
+          ],
+          [
+            "Absolute poverty",
+            "6.3%",
+            "8%",
+            "60 / 155",
+            "61.69",
+            "Middle range",
+            "—"
+          ],
+          [
+            "Sanitation access",
+            "100%",
+            "100%",
+            "1 / 155",
+            "100",
+            "Relative strength",
+            "—"
+          ]
+        ]
+      ]
+    },
+    "direct refresh, keyboard, help and map retry": {
+      "pass": false,
+      "error": "Error: Timed out: document.querySelector(\"dialog\")?.open KAWASAN\n\nMALAYSIA’S DISTRICT DATA\n\nNational Overview\nDistrict Intelligence\nCompare Districts\nDevelopment Gaps\n\nDeveloped by Max Deploystappen\n\nDevelopment Gaps\n\nFind where districts rank lower or have limited access to basic services.\n\nData year\n2024\nChoose a District to Investigate\nOpen district profile\nDevelopment gaps\nState or territory\nAll states\nJohor\nKedah\nKelantan\nMelaka\nNegeri Sembilan\nPahang\nPerak\nPulau Pinang\nSabah\nSarawak\nSelangor\nTerengganu\nDistrict\nChoose a district\nAlor Gajah · Melaka\nAsajaya · Sarawak\nBachok · Kelantan\nBagan Datuk · Perak\nBaling · Kedah\nBandar Baharu · Kedah\nBarat Daya · Pulau Pinang\nBatang Padang · Perak\nBatu Pahat · Johor\nBau · Sarawak\nBeaufort · Sabah\nBelaga · Sarawak\nBeluran · Sabah\nBeluru · Sarawak\nBentong · Pahang\nBera · Pahang\nBesut · Terengganu\nBetong · Sarawak\nBintulu · Sarawak\nBukit Mabong · Sarawak\nCameron Highlands · Pahang\nDalat · Sarawak\nDaro · Sarawak\nDungun · Terengganu\nGombak · Selangor\nGua Musang · Kelantan\nHilir Perak · Perak\nHulu Lang"
+    }
+  },
+  "errors": [],
+  "warnings": [],
+  "failures": [
+    {
+      "stage": "district values and switching",
+      "requestId": "29276.305",
+      "timestamp": 954525.485294,
+      "type": "XHR",
+      "errorText": "net::ERR_ABORTED",
+      "canceled": true
+    },
+    {
+      "stage": "district values and switching",
+      "requestId": "29276.306",
+      "timestamp": 954525.496973,
+      "type": "XHR",
+      "errorText": "net::ERR_ABORTED",
+      "canceled": true
+    },
+    {
+      "stage": "district values and switching",
+      "requestId": "29276.307",
+      "timestamp": 954525.497035,
+      "type": "XHR",
+      "errorText": "net::ERR_ABORTED",
+      "canceled": true
+    }
+  ],
+  "responses": [],
+  "requestCounts": {
+    "desktop/overview": {
+      "/districts": 1,
+      "/map/geojson": 1,
+      "/map/districts": 1
+    },
+    "desktop/district-intelligence": {
+      "/districts": 1,
+      "/districts/1_2/full-intelligence": 1,
+      "/map/geojson/1_2": 1
+    },
+    "desktop/compare-districts": {
+      "/districts": 1,
+      "/compare?district_a=1_2&district_b=13_37": 1,
+      "/districts/1_2": 1,
+      "/districts/13_37": 1
+    },
+    "desktop/development-gaps": {
+      "/districts": 1,
+      "/districts/1_2/full-intelligence": 1
+    },
+    "laptop/overview": {
+      "/districts": 1,
+      "/map/geojson": 1,
+      "/map/districts": 1
+    },
+    "laptop/district-intelligence": {
+      "/districts": 1,
+      "/districts/1_2/full-intelligence": 1,
+      "/map/geojson/1_2": 1
+    },
+    "laptop/compare-districts": {
+      "/districts": 1,
+      "/compare?district_a=1_2&district_b=13_37": 1,
+      "/districts/1_2": 1,
+      "/districts/13_37": 1
+    },
+    "laptop/development-gaps": {
+      "/districts": 1,
+      "/districts/1_2/full-intelligence": 1
+    },
+    "tablet/overview": {
+      "/districts": 1,
+      "/map/geojson": 1,
+      "/map/districts": 1
+    },
+    "tablet/district-intelligence": {
+      "/districts": 1,
+      "/districts/1_2/full-intelligence": 1,
+      "/map/geojson/1_2": 1
+    },
+    "tablet/compare-districts": {
+      "/districts": 1,
+      "/compare?district_a=1_2&district_b=13_37": 1,
+      "/districts/1_2": 1,
+      "/districts/13_37": 1
+    },
+    "tablet/development-gaps": {
+      "/districts": 1,
+      "/districts/1_2/full-intelligence": 1
+    },
+    "mobile/overview": {
+      "/districts": 1,
+      "/map/geojson": 1,
+      "/map/districts": 1
+    },
+    "mobile/district-intelligence": {
+      "/districts": 1,
+      "/districts/1_2/full-intelligence": 1,
+      "/map/geojson/1_2": 1
+    },
+    "mobile/compare-districts": {
+      "/districts": 1,
+      "/compare?district_a=1_2&district_b=13_37": 1,
+      "/districts/1_2": 1,
+      "/districts/13_37": 1
+    },
+    "mobile/development-gaps": {
+      "/districts": 1,
+      "/districts/1_2/full-intelligence": 1
+    },
+    "overview interactions": {
+      "/districts": 1,
+      "/map/geojson": 1,
+      "/map/districts": 1
+    },
+    "district values and switching": {
+      "/districts": 5,
+      "/districts/10_3/full-intelligence": 1,
+      "/map/geojson/10_3": 1,
+      "/districts/12_18/full-intelligence": 1,
+      "/map/geojson/12_18": 1,
+      "/districts/13_40/full-intelligence": 1,
+      "/map/geojson/13_40": 1,
+      "/districts/13_37/full-intelligence": 2,
+      "/map/geojson/13_37": 2,
+      "/districts/1_2/full-intelligence": 1,
+      "/map/geojson/1_2": 1,
+      "/districts/1_1/full-intelligence": 1,
+      "/map/geojson/1_1": 1
+    },
+    "comparison table, swap and duplicate": {
+      "/districts": 2,
+      "/compare?district_a=1_2&district_b=13_37": 1,
+      "/districts/1_2": 2,
+      "/districts/13_37": 2,
+      "/compare?district_a=13_37&district_b=1_2": 1
+    },
+    "gaps classifications and values": {
+      "/districts": 1,
+      "/districts/13_37/full-intelligence": 1
+    },
+    "direct refresh, keyboard, help and map retry": {
+      "/districts": 8,
+      "/map/geojson": 2,
+      "/map/districts": 2,
+      "/districts/1_2/full-intelligence": 4,
+      "/map/geojson/1_2": 2,
+      "/compare?district_a=1_2&district_b=13_37": 2,
+      "/districts/1_2": 2,
+      "/districts/13_37": 2
+    }
+  },
+  "supplemental": {
+    "overview retry and chart traces": {
+      "pass": true,
+      "legend": [
+        "High · 80–100",
+        "Moderate · 60–<80",
+        "Low · 40–<60",
+        "Very low · 0–<40",
+        "N/A · Missing score"
+      ],
+      "bins": [
+        0,
+        0,
+        2,
+        2,
+        8,
+        21,
+        57,
+        51,
+        12,
+        2
+      ],
+      "states": [
+        [
+          "selangor",
+          "84.54"
+        ],
+        [
+          "terengganu",
+          "78.83"
+        ],
+        [
+          "melaka",
+          "76.42"
+        ],
+        [
+          "johor",
+          "75.16"
+        ],
+        [
+          "pulau pinang",
+          "74.8"
+        ],
+        [
+          "pahang",
+          "74.02"
+        ],
+        [
+          "kedah",
+          "70.69"
+        ],
+        [
+          "negeri sembilan",
+          "68.59"
+        ],
+        [
+          "perak",
+          "68.01"
+        ],
+        [
+          "kelantan",
+          "62.79"
+        ],
+        [
+          "sarawak",
+          "60.89"
+        ],
+        [
+          "sabah",
+          "57.48"
+        ]
+      ],
+      "mapA11y": {
+        "polygons": 155,
+        "focusable": 0,
+        "skipLink": false
+      },
+      "navigationMs": 186,
+      "searchVisible": false
+    },
+    "refresh and help": {
+      "pass": true,
+      "focusReturned": true
+    },
+    "map failure and retry": {
+      "pass": true
+    },
+    "accessibility and fresh-browser timing": {
+      "pass": true,
+      "nav": {
+        "now": 1452,
+        "t": 17,
+        "headings": [
+          "KAWASAN",
+          "District Development Across Malaysia"
+        ],
+        "controls": [
+          1,
+          1,
+          1
+        ],
+        "title": "KAWASAN | Regional Development Intelligence",
+        "lang": "en",
+        "metaDescription": null,
+        "mapPolygons": 155,
+        "focusablePolygons": 0,
+        "skipLink": false
+      },
+      "resources": [
+        {
+          "url": "https://kawasan-gamma.vercel.app/assets/index-BOf9YU3C.js",
+          "start": 35,
+          "end": 80,
+          "transfer": 92349,
+          "encoded": 92049,
+          "decoded": 282047
+        },
+        {
+          "url": "https://kawasan-gamma.vercel.app/assets/Overview-kcsvrFOE.js",
+          "start": 98,
+          "end": 121,
+          "transfer": 4155,
+          "encoded": 3855,
+          "decoded": 9770
+        },
+        {
+          "url": "https://kawasan-gamma.vercel.app/assets/arrow-up-right-C27H_MS2.js",
+          "start": 98,
+          "end": 121,
+          "transfer": 702,
+          "encoded": 402,
+          "decoded": 402
+        },
+        {
+          "url": "https://kawasan-gamma.vercel.app/assets/useDistricts-DHFy2siC.js",
+          "start": 98,
+          "end": 159,
+          "transfer": 142210,
+          "encoded": 141910,
+          "decoded": 478263
+        },
+        {
+          "url": "https://kawasan-gamma.vercel.app/assets/DistrictMap-CMeLSXLV.js",
+          "start": 193,
+          "end": 237,
+          "transfer": 47875,
+          "encoded": 47575,
+          "decoded": 153651
+        },
+        {
+          "url": "https://kawasan-api.onrender.com/api/districts",
+          "start": 413,
+          "end": 449,
+          "transfer": 0,
+          "encoded": 0,
+          "decoded": 0
+        },
+        {
+          "url": "https://kawasan-api.onrender.com/api/map/geojson",
+          "start": 414,
+          "end": 1244,
+          "transfer": 0,
+          "encoded": 0,
+          "decoded": 0
+        },
+        {
+          "url": "https://kawasan-api.onrender.com/api/map/districts",
+          "start": 414,
+          "end": 449,
+          "transfer": 0,
+          "encoded": 0,
+          "decoded": 0
+        }
+      ]
+    }
+  },
+  "supplementalNetwork": {
+    "errors": [],
+    "warnings": [],
+    "failures": [
+      [
+        "map failure and retry",
+        "",
+        "inspector"
+      ]
+    ],
+    "responses": []
+  },
+  "finalChecks": {
+    "dimension and comparison charts": {
+      "pass": true,
+      "vals": [
+        [
+          83.68,
+          41.36,
+          100
+        ],
+        [
+          29.19,
+          46.6,
+          0
+        ]
+      ],
+      "plotted": [
+        [
+          83.67996651785714,
+          41.35995485438956,
+          99.99999886035917
+        ],
+        [
+          29.190011160714285,
+          46.59992058183283,
+          0
+        ]
+      ],
+      "insights": "Comparison Insights\nJohor Bahru has the higher KRDI score by 56.19 points.\nInfrastructure shows the largest dimension difference at 100 points.\nJohor Bahru reports lower absolute poverty by 4.4 percentage points.\nJohor Bahru reports higher piped water access by 74.99 percentage points.\nBoth districts report 100% for sanitation access.\nJohor Bahru reports higher electricity access by 45.83 percentage points."
+    },
+    "district indicators and benchmarks": {
+      "pass": true,
+      "checked": 37,
+      "chartGeometry": [
+        {
+          "bar": [],
+          "radar": [
+            null
+          ],
+          "grids": [
+            "M 241.5,145L 241.5,145L 241.5,145Z",
+            "M 241.5,125.4L 258.474097914175,154.8L 224.525902085825,154.8Z",
+            "M 241.5,105.8L 275.44819582835,164.6L 207.55180417165,164.6Z",
+            "M 241.5,86.19999999999999L 292.42229374252497,174.4L 190.577706257475,174.4Z",
+            "M 241.5,66.6L 309.3963916567,184.2L 173.60360834329998,184.2Z"
+          ]
+        }
+      ]
+    },
+    "development gap charts": {
+      "pass": true,
+      "vals": [
+        33.12,
+        46.75,
+        54.55,
+        61.69,
+        100
+      ],
+      "access": [
+        25,
+        100,
+        54.17
+      ],
+      "short": [
+        75,
+        0,
+        45.83
+      ],
+      "chartGeometry": [
+        {
+          "bar": [
+            113.60160064697266,
+            160.3524932861328,
+            187.10650634765625,
+            211.59669494628906,
+            343
+          ],
+          "radar": [],
+          "grids": []
+        },
+        {
+          "bar": [
+            93,
+            372,
+            201.5124053955078,
+            279,
+            170.48760986328125
+          ],
+          "radar": [],
+          "grids": []
+        }
+      ]
+    },
+    "district radar": {
+      "pass": true,
+      "vals": [
+        [
+          29.19,
+          46.6,
+          0
+        ]
+      ],
+      "plotted": [
+        [
+          29.190051020408166,
+          46.59997955117306,
+          0
+        ]
+      ]
+    }
+  }
+}
