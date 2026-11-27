@@ -76,8 +76,8 @@ export default function DistrictMap({ geometry, scores, national = false }) {
       {scores && scores.error && <div className="mb-3"><ResourceState resource={scores} label="map scores" /></div>}
       {bounds.isValid() ? (
         <MapContainer
-          center={[4, 109]} zoom={5} minZoom={3} maxZoom={14} scrollWheelZoom={false} zoomAnimation={false}
-          className={"isolate z-0 rounded-xl bg-[#edf5f7] " + (national ? "h-[340px] sm:h-[500px]" : "h-[320px]")}
+          center={[4, 109]} zoom={5} minZoom={3} maxZoom={14} scrollWheelZoom={national} zoomAnimation={false}
+          className={"isolate z-0 rounded-xl bg-[#edf5f7] " + (national ? "h-[340px] sm:h-[460px] lg:h-[520px]" : "h-[320px]")}
         >
           <GeoJSON key={scores?.data ? "map-scores" : "geometry"} data={geometry.data} style={style} onEachFeature={bindDistrict} />
           <FitControls bounds={bounds} />

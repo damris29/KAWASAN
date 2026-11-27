@@ -1,8 +1,8 @@
 import { lazy, Suspense, useMemo } from "react";
-import { Activity, ArrowDownRight, ArrowUpRight, ChartNoAxesCombined, Compass, GitCompareArrows, MapPinned } from "lucide-react";
+import { Activity, ArrowDownRight, ArrowUpRight, Compass, MapPinned } from "lucide-react";
 import { Link } from "react-router-dom";
 import { EmptyState, Panel, ResourceState, Stat, linkClass } from "../components/Dashboard";
-import NationalCharts from "../components/NationalCharts";
+import NationalCharts, { NationalRankingCharts } from "../components/NationalCharts";
 import DistrictRankingTable from "../components/DistrictRankingTable";
 import { useDistricts } from "../hooks/useDistricts";
 import useResource from "../hooks/useResource";
@@ -70,73 +70,21 @@ export default function Overview() {
         </div>
       </ResourceState>
 
-      <Panel title="Malaysia district development map" description="Explore 2024 KRDI score bands. Select a district polygon to open its profile. The bands are exploratory.">
-        <Suspense fallback={<EmptyState>Loading the interactive map…</EmptyState>}>
-          <DistrictMap geometry={geometry} scores={mapScores} national />
-        </Suspense>
-      </Panel>
+      <div className="grid gap-5 lg:grid-cols-2">
+        <Panel title="Malaysia district development map" description="Scroll over the map to zoom. Select a district to open its profile. KRDI bands are exploratory.">
+          <Suspense fallback={<EmptyState>Loading the interactive map…</EmptyState>}>
+            <DistrictMap geometry={geometry} scores={mapScores} national />
+          </Suspense>
+        </Panel>
+        {!list.loading && !list.error && districts.length > 0 && <NationalRankingCharts ranked={ranked} />}
+      </div>
 
       {!list.loading && !list.error && districts.length > 0 && (
         <>
-          <NationalCharts districts={districts} ranked={ranked} />
+          <NationalCharts districts={districts} />
           <DistrictRankingTable districts={districts} />
         </>
       )}
-
-      <section>
-        <div className="mb-4">
-          <p className="text-xs font-bold uppercase tracking-[0.16em] text-teal-700">
-            Navigate workspace
-          </p>
-          <h2 className="mt-1 text-xl font-bold tracking-tight text-slate-900">
-            Explore KAWASAN
-          </h2>
-        </div>
-        <div className="grid gap-4 md:grid-cols-3">
-          {[
-            {
-              title: "District Intelligence",
-              description: "Open district-level profiles and socioeconomic information.",
-              path: "/districts",
-              icon: MapPinned,
-            },
-            {
-              title: "Compare Districts",
-              description: "Access the district comparison workspace.",
-              path: "/compare",
-              icon: GitCompareArrows,
-            },
-            {
-              title: "Development Gaps",
-              description: "Access the development gap analysis workspace.",
-              path: "/gaps",
-              icon: ChartNoAxesCombined,
-            },
-          ].map((item) => {
-            const Icon = item.icon;
-            return (
-              <Link
-                key={item.path}
-                to={item.path}
-                className="group flex items-start gap-4 rounded-2xl border border-slate-200/80 bg-white p-5 shadow-sm shadow-slate-900/[0.02] transition hover:-translate-y-0.5 hover:border-teal-200 hover:shadow-md"
-              >
-                <div className="rounded-xl bg-teal-50 p-3 text-teal-700 transition group-hover:bg-teal-100">
-                  <Icon size={20} />
-                </div>
-                <div className="min-w-0 flex-1">
-                  <h3 className="font-bold text-slate-900">{item.title}</h3>
-                  <p className="mt-1 text-xs leading-5 text-slate-500">
-                    {item.description}
-                  </p>
-                  <span className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-teal-700">
-                    Open workspace <ArrowUpRight size={14} />
-                  </span>
-                </div>
-              </Link>
-            );
-          })}
-        </div>
-      </section>
     </div>
   );
 }

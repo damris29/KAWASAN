@@ -20,7 +20,7 @@ function RankingChart({ title, districts, color }) {
   return (
     <Panel title={title} description="National rank · Click a bar to open its district profile.">
       {districts.length ? (
-        <ResponsiveContainer width="100%" minWidth={0} height={255}>
+        <ResponsiveContainer width="100%" minWidth={0} height={205}>
           <BarChart data={districts} layout="vertical" margin={{ right: 12, bottom: 8 }}>
             <CartesianGrid strokeDasharray="3 3" horizontal={false} />
             <XAxis type="number" domain={[0, 100]} label={{ value: "KRDI score", position: "bottom", fontSize: 11 }} />
@@ -35,7 +35,16 @@ function RankingChart({ title, districts, color }) {
   );
 }
 
-export default function NationalCharts({ ranked, districts }) {
+export function NationalRankingCharts({ ranked }) {
+  return (
+    <div className="grid min-w-0 gap-5">
+      <RankingChart title="Five highest-ranked districts" districts={ranked.slice(0, 5)} color="#0f766e" />
+      <RankingChart title="Five lowest-ranked districts" districts={ranked.slice(-5).reverse()} color="#466c89" />
+    </div>
+  );
+}
+
+export default function NationalCharts({ districts }) {
   const { bins, observations, stateMeans } = useMemo(() => {
     const totals = new Map();
     let observations = 0;
@@ -56,13 +65,9 @@ export default function NationalCharts({ ranked, districts }) {
   }, [districts]);
 
   return (
-    <>
-      <div className="grid gap-5 xl:grid-cols-2">
-        <RankingChart title="Five highest-ranked districts" districts={ranked.slice(0, 5)} color="#0f766e" />
-        <RankingChart title="Five lowest-ranked districts" districts={ranked.slice(-5).reverse()} color="#466c89" />
-      </div>
+    <div className="grid gap-5 lg:grid-cols-2">
       <Panel title="Distribution of district KRDI scores" description={observations + " districts with valid scores · 10-point bins"}>
-        <ResponsiveContainer width="100%" minWidth={0} height={265}>
+        <ResponsiveContainer width="100%" minWidth={0} height={Math.max(265, 32 + stateMeans.length * 25)}>
           <BarChart data={bins} margin={{ left: 8, right: 8, bottom: 12 }}>
             <CartesianGrid strokeDasharray="3 3" vertical={false} />
             <XAxis dataKey="range" interval="preserveStartEnd" tick={{ fontSize: 10 }} label={{ value: "KRDI score range", position: "bottom", fontSize: 11 }} />
@@ -85,6 +90,6 @@ export default function NationalCharts({ ranked, districts }) {
           </ResponsiveContainer>
         </Panel>
       )}
-    </>
+    </div>
   );
 }
