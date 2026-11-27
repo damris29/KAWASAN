@@ -5,6 +5,15 @@ KAWASAN is a data-driven platform designed to analyse and visualise socioeconomi
 
 The platform aims to make district-level information more accessible, helping users explore regional disparities, compare socioeconomic conditions, identify development gaps, and understand development patterns through interactive visualisations.
 
+## Project Links
+
+- [Production dashboard](https://kawasan-gamma.vercel.app/)
+- [API health](https://kawasan-api.onrender.com/health) and [interactive API documentation](https://kawasan-api.onrender.com/docs)
+- [Frontend setup and deployment guide](frontend/README.md)
+- [API and KRDI methodology](documentation/KAWASAN_Backend_API_Documentation.md)
+- [Production QA report and evidence](documentation/KAWASAN_Production_QA_Report.md)
+
+
 ## Overview
 
 KAWASAN combines data analytics, a composite development index, geographic information, and a REST API to support an interactive socioeconomic intelligence dashboard.
@@ -83,7 +92,7 @@ The current analytical implementation covers:
 
 | Component | Description |
 |---|---|
-| Geographic coverage | 155 Malaysian districts |
+| Geographic coverage | 155 eligible districts across 12 Malaysian states |
 | Socioeconomic indicators | 28 indicators |
 | Development index | KRDI v0.1 |
 | KRDI components | 6 selected indicators |
@@ -103,7 +112,7 @@ KRDI should be interpreted as a project-defined analytical measure rather than a
 
 ### Data Limitations
 
-Some socioeconomic indicators have incomplete geographic coverage.
+National statistics and rankings reflect the eligible districts in the 2024 analytical dataset. Socioeconomic data were collected for Perlis, Kuala Lumpur, Putrajaya, and Labuan. Reference-year alignment and indicator coverage were insufficient for comparable KRDI v0.1 scores. These areas remain unscored and unranked and may be included in future versions when suitable data become available.
 
 Missing values are preserved where appropriate and should be displayed as **N/A**, rather than interpreted as zero.
 
@@ -124,6 +133,8 @@ Users should consider data availability, indicator definitions, and methodologic
 | Charts | Recharts |
 
 ## Local Setup
+
+The verified local toolchain is Python 3.13 and Node.js 24 with npm.
 
 ### 1. Clone the repository
 
@@ -163,6 +174,20 @@ The API will be available locally at:
 - Base URL: `http://127.0.0.1:8000`
 - API Documentation: `http://127.0.0.1:8000/docs`
 - Health Check: `http://127.0.0.1:8000/health`
+
+### 5. Start the frontend
+
+Keep the API running and open a second terminal. From the repository root, run:
+
+```powershell
+cd frontend
+Copy-Item .env.example .env.local
+npm ci
+npm run dev -- --host localhost --port 5173 --strictPort
+```
+
+Open `http://localhost:5173`. For local development, `frontend/.env.local` should contain `VITE_API_BASE_URL=http://127.0.0.1:8000`. If the file already exists, update that setting directly. To use Render instead, set it to `https://kawasan-api.onrender.com` and restart Vite.
+
 
 ## API Documentation
 
@@ -228,6 +253,28 @@ Example Render configuration:
 | Start Command | `uvicorn api.main:app --host 0.0.0.0 --port $PORT` |
 
 After deployment, verify the health endpoint and API documentation before connecting the frontend.
+
+## Frontend Deployment
+
+| Host | Required setting | Value |
+| --- | --- | --- |
+| Vercel | Root directory | `frontend` |
+| Vercel | Framework / Node.js | Vite / 24.x |
+| Vercel | Install / build / output | `npm ci` / `npm run build` / `dist` |
+| Vercel | `VITE_API_BASE_URL` | `https://kawasan-api.onrender.com` |
+| Render | `FRONTEND_ORIGINS` | `https://kawasan-gamma.vercel.app`, plus any other approved origins separated by commas |
+
+Enter origins without a trailing slash. The SPA rewrite is already in `frontend/vercel.json`. Store local settings in `frontend/.env.local` and production settings in the hosting dashboards. Commit configuration examples only.
+
+## Submission Checklist
+
+- [ ] Include the production dashboard URL, the repository URL, and the submission commit or tag.
+- [ ] Include the KRDI methodology and the QA report with evidence links. Confirm the evidence files are available in the submission.
+- [ ] Run `npm run lint` and `npm run build` from `frontend`.
+- [ ] Run `python -m unittest discover -s tests -v` from the repository root with the local API running.
+- [ ] Verify the deployed release by opening and refreshing all four dashboard routes. Check district selection, map navigation, comparison swap, gap analysis, and keyboard access.
+- [ ] Record the final deployment status and any remaining limitations in the QA report.
+
 
 ## Development Notes
 
