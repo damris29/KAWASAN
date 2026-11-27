@@ -13,6 +13,7 @@ const DistrictMap = lazy(() => import("../components/DistrictMap"));
 export default function Overview() {
   const list = useDistricts();
   const { districts } = list;
+  const hasRankings = !list.loading && !list.error && districts.length > 0;
   const geometry = useResource("/api/map/geojson");
   const mapScores = useResource("/api/map/districts");
   const ranked = useMemo(() => districts
@@ -35,7 +36,7 @@ export default function Overview() {
             District Development Across Malaysia
           </h1>
           <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-300 sm:text-base">
-            See how districts compare on income, equality, and access to basic services.
+            KRDI v0.1 covers 155 eligible districts across 12 Malaysian states. National statistics and rankings reflect this group. Data were collected for Perlis and the three federal territories, but alignment with the 2024 reference year and indicator coverage are insufficient for comparable scores.
           </p>
           <Link
             to="/districts"
@@ -58,18 +59,21 @@ export default function Overview() {
       </ResourceState>
 
       <div className="grid gap-5 lg:grid-cols-2">
-        <Panel title="Malaysia District Development Map" description="Scroll to zoom. Select a district to open its profile.">
+        <Panel title="Malaysia District Development Map" description="Scroll to zoom. Select a district to open its profile."
+          actions={hasRankings && <a href="#district-rankings" className={linkClass + " text-sm"}>Choose a district from the rankings</a>}>
           <Suspense fallback={<EmptyState>Loading the interactive map…</EmptyState>}>
             <DistrictMap geometry={geometry} scores={mapScores} national />
           </Suspense>
         </Panel>
-        {!list.loading && !list.error && districts.length > 0 && <NationalRankingCharts ranked={ranked} />}
+        {hasRankings && <NationalRankingCharts ranked={ranked} />}
       </div>
 
-      {!list.loading && !list.error && districts.length > 0 && (
+      {hasRankings && (
         <>
           <NationalCharts districts={districts} />
-          <DistrictRankingTable districts={districts} />
+          <div id="district-rankings" tabIndex={-1} className="scroll-mt-32">
+            <DistrictRankingTable districts={districts} />
+          </div>
         </>
       )}
     </div>
