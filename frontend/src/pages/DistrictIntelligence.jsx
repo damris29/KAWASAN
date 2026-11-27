@@ -15,10 +15,10 @@ function DistrictMetrics({ profile }) {
   const { krdi, indicators } = profile;
   return (
     <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-      <Stat prominent label="KRDI score" value={number(krdi.score)} icon={Activity} />
-      <Stat prominent label="National rank" value={number(krdi.rank)} icon={MapPinned} />
-      <Stat prominent label="Rank stability" value={krdi.stability ?? "N/A"} icon={ArrowUpRight} />
-      <Stat prominent label="Rank range" value={number(krdi.rank_range)} />
+      <Stat prominent label="KRDI Score" value={number(krdi.score)} icon={Activity} />
+      <Stat prominent label="National Rank" value={number(krdi.rank)} icon={MapPinned} />
+      <Stat prominent label="Rank Stability" value={krdi.stability ?? "N/A"} icon={ArrowUpRight} />
+      <Stat prominent label="Rank Range" value={number(krdi.rank_range)} />
       {[
         ["population", indicators.demographics],
         ["income_median", indicators.economy],
